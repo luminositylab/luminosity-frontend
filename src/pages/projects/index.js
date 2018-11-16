@@ -4,6 +4,10 @@ import Helmet from 'react-helmet';
 import Layout from '../../components/layout';
 import Banner from '../../components/Banner';
 
+import pic04 from '../../assets/images/pic04.jpg';
+import pic05 from '../../assets/images/pic05.jpg';
+import pic06 from '../../assets/images/pic06.jpg';
+import pic07 from '../../assets/images/pic07.jpg';
 import pic08 from '../../assets/images/pic08.jpg';
 import pic09 from '../../assets/images/pic09.jpg';
 import pic10 from '../../assets/images/pic10.jpg';
@@ -45,24 +49,39 @@ const projects = [
     title: 'AXIO',
     description:
       'An intelligent platform for personalized growth and lifelong learning.',
-    image: pic08
+    image: pic10
   },
   {
     title: 'Guardian Drones',
     description:
       'Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem.',
-    image: pic09
+    image: pic05
   },
   {
     title: 'KIP',
     description: 'Nullam et orci eu lorem consequat tincidunt.',
-    image: pic10
+    image: pic04
   },
   {
     title: 'Ceryx',
     description:
       'An electronic health records system built on modern standards to be intelligent, secure by default, and beautifully engaging.',
+    image: pic05
+  },
+  {
+    title: 'GridBase',
+    description: 'Nullam et orci eu lorem consequat tincidunt.',
     image: pic08
+  },
+  {
+    title: 'Overlay',
+    description: 'Nullam et orci eu lorem consequat tincidunt.',
+    image: pic09
+  },
+  {
+    title: 'Byblos',
+    description: 'Redefining research collaboration.',
+    image: pic10
   }
 ];
 
