@@ -5,54 +5,49 @@ const Contact = props => (
     <div className="inner">
       <section>
         <form method="post" action="#">
-          <div className="field half first">
+          {/* <div className="field half first">
             <label htmlFor="name">Name</label>
             <input type="text" name="name" id="name" />
-          </div>
-          <div className="field half">
+          </div> */}
+          <div className="field first">
             <label htmlFor="email">Email</label>
             <input type="text" name="email" id="email" />
           </div>
-          <div className="field">
+          {/* <div className="field">
             <label htmlFor="message">Message</label>
             <textarea name="message" id="message" rows="6" />
-          </div>
+          </div> */}
           <ul className="actions">
             <li>
               <input type="submit" value="Send Message" className="special" />
-            </li>
-            <li>
-              <input type="reset" value="Clear" />
             </li>
           </ul>
         </form>
       </section>
       <section className="split">
         <section>
+          <a href="mailto:luminosity@asu.edu">
           <div className="contact-method">
             <span className="icon alt fa-envelope" />
-            <h3>Email</h3>
-            <a href="#">luminosity@asu.edu</a>
-          </div>
+            <a>luminosity@asu.edu</a>
+          </div></a>
         </section>
         <section>
           <div className="contact-method">
             <span className="icon alt fa-phone" />
-            <h3>Phone</h3>
-            <span>(855) 278 5080</span>
+            <a href="tel:8552785080">(855) 278 5080</a>
           </div>
         </section>
         <section>
           <div className="contact-method">
             <span className="icon alt fa-home" />
-            <h3>Address</h3>
-            <span>
+            <a href="https://goo.gl/maps/GWM6ghoZZt62">
               300 E University Dr
               <br />
               Tempe, AZ 85281
               <br />
               United States of America
-            </span>
+            </a>
           </div>
         </section>
       </section>

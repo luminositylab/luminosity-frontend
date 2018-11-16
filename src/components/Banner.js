@@ -1,15 +1,14 @@
 import React from 'react';
 
 const Banner = props => (
-  <section id="banner" className="major">
+  <section id="banner" className={props.title ? 'minor' : 'major'}>
     <div className="inner">
-      <p>
-        The Luminosity Lab combines some of the most gifted students across
-        Arizona State University.
-        <br />
-        <br />
-        We build radical solutions around the world's most complex challenges.
-      </p>
+      {props.title && (
+        <header className="major">
+          <h1>{props.title}</h1>
+        </header>
+      )}
+      <p>{props.description}</p>
     </div>
   </section>
 );

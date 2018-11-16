@@ -25,13 +25,13 @@
 		weight:				300,
 		weight-bold:		600,
 		letter-spacing:		0.025em,
-		letter-spacing-alt:	0.25em
+		letter-spacing-alt:	0.15em
 	);
 
 // Palette.
 	$palette: (
-		bg:					#242943,
-		bg-alt:				#2a2f4a,
+		bg:					rgb(27, 27, 27),
+		bg-alt:				#1b1b1b,
 		fg:					#ffffff,
 		fg-bold:			#ffffff,
 		fg-light:			rgba(244,244,255,0.2),

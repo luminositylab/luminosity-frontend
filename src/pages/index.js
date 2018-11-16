@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import Banner from '../components/Banner';
 
-import pic01 from '../assets/images/pic01.jpg';
+import guardianDronesOne from '../assets/images/guardian-drones-1.jpg';
 import pic02 from '../assets/images/pic02.jpg';
 import pic03 from '../assets/images/pic03.jpg';
 import pic04 from '../assets/images/pic04.jpg';
@@ -16,7 +16,7 @@ class HomeIndex extends React.Component {
     return (
       <Layout>
         <Helmet
-          title="The Luminosity Lab | Starting the Future."
+          title="The Luminosity Lab | Beginning the Future."
           meta={
             [
               // { name: 'description', content: 'Sample' },
@@ -25,25 +25,39 @@ class HomeIndex extends React.Component {
           }
         />
 
-        <Banner />
+        <Banner
+          description={
+            <React.Fragment>
+              The Luminosity Lab combines some of the most gifted students
+              across Arizona State University.
+              <br />
+              <br />
+              We build radical solutions around the world's most complex
+              challenges.
+            </React.Fragment>
+          }
+        />
 
         <div id="main">
           <section id="one" className="tiles">
-            <article style={{ backgroundImage: `url(${pic01})` }}>
+            <article style={{ backgroundImage: `url(${guardianDronesOne})` }}>
               <header className="major">
-                <h3>Aliquam</h3>
-                <p>Ipsum dolor sit amet</p>
+                <h3>Projects</h3>
+                <p>
+                  Luminosity is continuously implementing solutions which impact
+                  global society and improve the condition of all humanity.
+                </p>
               </header>
-              <Link to="/landing" className="link primary" />
+              <Link to="/projects" className="link primary" />
             </article>
-            <article style={{ backgroundImage: `url(${pic02})` }}>
+            {/* <article style={{ backgroundImage: `url(${pic02})` }}>
               <header className="major">
                 <h3>Tempus</h3>
                 <p>feugiat amet tempus</p>
               </header>
               <Link to="/landing" className="link primary" />
             </article>
-            <article style={{ backgroundImage: `url(${pic03})` }}>
+             <article style={{ backgroundImage: `url(${pic03})` }}>
               <header className="major">
                 <h3>Magna</h3>
                 <p>Lorem etiam nullam</p>
@@ -70,26 +84,24 @@ class HomeIndex extends React.Component {
                 <p>Feugiat amet tempus</p>
               </header>
               <Link to="/landing" className="link primary" />
-            </article>
+            </article> */}
           </section>
           <section id="two">
             <div className="inner">
               <header className="major">
-                <h2>Massa libero</h2>
+                <h2>Our Team</h2>
               </header>
               <p>
-                Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-                libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-                Pellentesque condimentum sem. In efficitur ligula tate urna.
-                Maecenas laoreet massa vel lacinia pellentesque lorem ipsum
-                dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et
-                sagittis libero. Mauris aliquet magna magna sed nunc rhoncus
-                amet pharetra et feugiat tempus.
+                We are comprised of an interdisciplinary set of people with
+                diverse talents. We have specialists in fields including
+                human-machine interaction, hardware prototyping, industrial and
+                graphic design, artificial intelligence, amd systems
+                engineering.
               </p>
               <ul className="actions">
                 <li>
-                  <Link to="/landing" className="button next">
-                    Get Started
+                  <Link to="/team" className="button next">
+                    Meet Us
                   </Link>
                 </li>
               </ul>

@@ -1,8 +1,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import Layout from '../components/layout';
+import Layout from '../../components/layout';
 
-import pic11 from '../assets/images/pic11.jpg';
+import pic11 from '../../assets/images/pic11.jpg';
 
 const Generic = props => (
   <Layout>
@@ -15,7 +15,7 @@ const Generic = props => (
       <section id="one">
         <div className="inner">
           <header className="major">
-            <h1>Generic</h1>
+            <h1>AXIO</h1>
           </header>
           <span className="image main">
             <img src={pic11} alt="" />

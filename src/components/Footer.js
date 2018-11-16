@@ -5,11 +5,14 @@ const Footer = props => (
     <div className="inner">
       <ul className="icons">
         <li>
-          <a href="#" className="icon alt fa-twitter">
+          <a
+            href="https://twitter.com/luminositylab"
+            className="icon alt fa-twitter"
+          >
             <span className="label">Twitter</span>
           </a>
         </li>
-        <li>
+        {/*<li>
           <a href="#" className="icon alt fa-facebook">
             <span className="label">Facebook</span>
           </a>
@@ -18,20 +21,26 @@ const Footer = props => (
           <a href="#" className="icon alt fa-instagram">
             <span className="label">Instagram</span>
           </a>
-        </li>
+        </li> */}
         <li>
-          <a href="#" className="icon alt fa-github">
+          <a
+            href="https://github.com/luminositylab"
+            className="icon alt fa-github"
+          >
             <span className="label">GitHub</span>
           </a>
         </li>
         <li>
-          <a href="#" className="icon alt fa-linkedin">
+          <a
+            href="https://www.linkedin.com/company/the-luminosity-lab"
+            className="icon alt fa-linkedin"
+          >
             <span className="label">LinkedIn</span>
           </a>
         </li>
       </ul>
       <ul className="copyright">
-        <li>&copy; {(new Date()).getFullYear()} The Luminosity Lab</li>
+        <li>&copy; {new Date().getFullYear()} The Luminosity Lab</li>
         {/* <li>
           Design: <a href="https://html5up.net">HTML5 UP</a>
         </li> */}
