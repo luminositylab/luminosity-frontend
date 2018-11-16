@@ -93,10 +93,9 @@ class HomeIndex extends React.Component {
               </header>
               <p>
                 We are comprised of an interdisciplinary set of people with
-                diverse talents. We have specialists in fields including
-                human-machine interaction, hardware prototyping, industrial and
-                graphic design, artificial intelligence, amd systems
-                engineering.
+                diverse talents, including specialists in human-machine
+                interaction, hardware prototyping, industrial and graphic
+                design, artificial intelligence, and systems engineering.
               </p>
               <ul className="actions">
                 <li>
