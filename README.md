@@ -1,8 +1,7 @@
-<!-- <h1 align="center" style="border-bottom: none;">💡 Luminosity 💡</h1> -->
 <div align="center">
   <img style="width: 100%; max-width: 400px;" src="./src/assets/images/logo-with-text-black.png" alt="Feathers logo">
 </div>
-<h3 align="center">The modern web app for the Luminosity Lab at Arizona State University.</h3>
+<h3 align="center">The modern web app for The Luminosity Lab at Arizona State University.</h3>
 
 <div align="center">
 
