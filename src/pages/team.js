@@ -1,72 +1,33 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import Banner from '../components/Banner';
+import members from '../content/members';
 
-import pic08 from '../assets/images/pic08.jpg';
-import pic09 from '../assets/images/pic09.jpg';
-import pic10 from '../assets/images/pic10.jpg';
+import teamWorkVideo from '../assets/videos/team-work-blurry.mp4';
 
-const translateProjectTitleToPath = title =>
-  title.replace(/\s+/g, '-').toLowerCase();
+// const translateProjectTitleToPath = title =>
+//   title.replace(/\s+/g, '-').toLowerCase();
 
-const createSection = ({ title, description, image }) => (
-  <section>
-    <Link
-      to={`/projects/${translateProjectTitleToPath(title)}`}
-      className="image"
-    >
-      <img src={image} alt="" />
-    </Link>
+const createHeadshot = ({ name, description, image }) => (
+  <div key={name} className="container">
+    <div className="image">
+      {image && <Img fluid={image} alt={name} />}
+    </div>
     <div className="content">
-      <div className="inner">
-        <header className="major">
-          <h3>{title}</h3>
+      <div>
+        <header>
+          <h2>{name}</h2>
         </header>
         <p>{description}</p>
-        <ul className="actions">
-          <li>
-            <Link
-              to={`/projects/${translateProjectTitleToPath(title)}`}
-              className="button"
-            >
-              Learn more
-            </Link>
-          </li>
-        </ul>
       </div>
     </div>
-  </section>
+  </div>
 );
 
-const projects = [
-  {
-    title: 'AXIO',
-    description:
-      'An intelligent platform for personalized growth and lifelong learning.',
-    image: pic08
-  },
-  {
-    title: 'Guardian Drones',
-    description:
-      'Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem.',
-    image: pic09
-  },
-  {
-    title: 'KIP',
-    description: 'Nullam et orci eu lorem consequat tincidunt.',
-    image: pic10
-  },
-  {
-    title: 'Ceryx',
-    description:
-      'An electronic health records system built on modern standards to be intelligent, secure by default, and beautifully engaging.',
-    image: pic08
-  }
-];
-
-const Team = props => (
+const Team = ({ data }) => (
   <Layout>
     <Helmet>
       <title>The Team | The Luminosity Lab</title>
@@ -76,16 +37,36 @@ const Team = props => (
     <Banner
       title={'The Team'}
       description={
-        'We are made up of talented individuals from around the globe.'
+        'We are made up of brilliant individuals from around the globe.'
       }
+      video={teamWorkVideo}
     />
 
     <div id="main">
-      <section id="one" className="spotlights">
-        {projects.map(e => createSection(e))}
+      <section id="one" className="headshots">
+        {members.map(e =>
+          createHeadshot({
+            ...e,
+            image: data[e.image].childImageSharp.fluid
+          })
+        )}
       </section>
     </div>
   </Layout>
 );
 
 export default Team;
+
+export const query = graphql`
+  query {
+    headshot: file(relativePath: { eq: "headshots/headshot.jpg" }) {
+      ...fluidImage
+    }
+    headshot1: file(relativePath: { eq: "headshots/headshot1.jpg" }) {
+      ...fluidImage
+    }
+    headshot2: file(relativePath: { eq: "headshots/headshot2.jpg" }) {
+      ...fluidImage
+    }
+  }
+`;

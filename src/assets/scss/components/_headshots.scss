@@ -1,0 +1,54 @@
+///
+/// Forty by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Headshots */
+
+.headshots {
+  @include vendor('display', 'flex');
+  @include vendor('flex-direction', 'row');
+  flex-wrap: wrap;
+  flex: 1;
+
+  > .container {
+    position: relative;
+    width: 33.33%;
+    cursor: pointer;
+
+    > .content {
+      padding: 3em;
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    &:hover {
+      > .image {
+        opacity: 0.7;
+      }
+    }
+
+    > .image {
+      overflow: hidden;
+      opacity: 0.5;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  @include breakpoint(medium) {
+    > .container {
+      width: 50%;
+    }
+  }
+
+  @include breakpoint(small) {
+    > .container {
+      width: 100%;
+    }
+  }
+}

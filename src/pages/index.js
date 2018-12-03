@@ -5,18 +5,18 @@ import Layout from '../components/layout';
 import Banner from '../components/Banner';
 
 import guardianDronesOne from '../assets/images/guardian-drones-1.jpg';
-import pic02 from '../assets/images/pic02.jpg';
-import pic03 from '../assets/images/pic03.jpg';
-import pic04 from '../assets/images/pic04.jpg';
-import pic05 from '../assets/images/pic05.jpg';
-import pic06 from '../assets/images/pic06.jpg';
+// import pic02 from '../assets/images/pic02.jpg';
+// import pic03 from '../assets/images/pic03.jpg';
+// import pic04 from '../assets/images/pic04.jpg';
+// import pic05 from '../assets/images/pic05.jpg';
+// import pic06 from '../assets/images/pic06.jpg';
 
 class HomeIndex extends React.Component {
   render() {
     return (
       <Layout>
         <Helmet
-          title="The Luminosity Lab | Beginning the Future."
+          title="Luminosity | Beginning the Future."
           meta={
             [
               // { name: 'description', content: 'Sample' },
@@ -113,3 +113,14 @@ class HomeIndex extends React.Component {
 }
 
 export default HomeIndex;
+
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid(maxWidth: 800) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+  }
+`;
+

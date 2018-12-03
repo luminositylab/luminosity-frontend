@@ -18,17 +18,31 @@
     @include vendor('flex-direction', 'row');
     background-color: desaturate(lighten(_palette(bg-alt), 2), 1);
 
+    &:hover {
+      > .image {
+        opacity: 0.8;
+      }
+    }
+
     > .image {
-			background-attachment: fixed;
-			background-position: center center;
-			background-repeat: no-repeat;
-			background-size: cover;
+      background-attachment: fixed;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
       border-radius: 0;
       display: block;
       position: relative;
-			width: 30%;
+      width: 30%;
+      overflow: hidden;
+      opacity: 0.5;
 
       img {
+        border-radius: 0;
+        display: block;
+        width: 100%;
+      }
+
+      video {
         border-radius: 0;
         display: block;
         width: 100%;

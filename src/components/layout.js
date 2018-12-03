@@ -46,7 +46,9 @@ class Layout extends React.Component {
       >
         <div id="wrapper">
           <Header onToggleMenu={this.handleToggleMenu} />
-          {children}
+          {React.Children.map(children, child =>
+            React.cloneElement(child, { onToggleMenu: this.onToggleMenu })
+          )}
           <Contact />
           <Footer />
         </div>
