@@ -1,22 +1,16 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import Helmet from 'react-helmet';
+import SEO from '../components/SEO';
 import Layout from '../components/layout';
 import Banner from '../components/Banner';
 import projects from '../content/projects';
 
 import mockUpVideo from '../assets/videos/mock-up.mp4';
 
-const translateProjectTitleToPath = title =>
-  title.replace(/\s+/g, '').toLowerCase();
-
-const createSection = ({ title, description, fluidImage, video }) => (
+const createSection = ({ title, path, description, fluidImage, video }) => (
   <section key={title}>
-    <Link
-      to={`/projects/${translateProjectTitleToPath(title)}`}
-      className="image"
-    >
+    <Link to={`/projects/${path}`} className="image">
       {fluidImage && <Img fluid={fluidImage} alt={title} />}
       {video && (
         <video playsInline autoPlay muted loop>
@@ -33,10 +27,7 @@ const createSection = ({ title, description, fluidImage, video }) => (
         <p>{description}</p>
         <ul className="actions">
           <li>
-            <Link
-              to={`/projects/${translateProjectTitleToPath(title)}`}
-              className="button"
-            >
+            <Link to={`/projects/${path}`} className="button">
               Learn more
             </Link>
           </li>
@@ -48,12 +39,13 @@ const createSection = ({ title, description, fluidImage, video }) => (
 
 const videoBlur = `blur(10px)`;
 
-const Projects = ({ data }) => (
+const Projects = ({ data, location }) => (
   <Layout>
-    <Helmet>
-      <title>Projects | The Luminosity Lab</title>
-      <meta name="description" content="Projects" />
-    </Helmet>
+    <SEO
+      title="Projects"
+      description="Projects within the Luminosity Lab."
+      location={location}
+    />
 
     <Banner
       title={'Projects'}
@@ -76,7 +68,9 @@ const Projects = ({ data }) => (
           createSection({
             ...e,
             fluidImage:
-              data[translateProjectTitleToPath(e.title)].childImageSharp.fluid
+              data[e.path] &&
+              data[e.path].childImageSharp &&
+              data[e.path].childImageSharp.fluid
           })
         )}
       </section>
@@ -88,25 +82,37 @@ export default Projects;
 
 export const query = graphql`
   query {
-    axio: file(relativePath: { eq: "projects/axio.jpg" }) {
+    axio: file(relativePath: { regex: "/axio/" }) {
       ...fluidImage
     }
-    guardiandrones: file(relativePath: { eq: "projects/guardiandrones.jpg" }) {
+    guardiandrones: file(relativePath: { regex: "/guardiandrones/" }) {
       ...fluidImage
     }
-    kip: file(relativePath: { eq: "projects/kip.jpg" }) {
+    kip: file(relativePath: { regex: "/kip/" }) {
       ...fluidImage
     }
-    byblos: file(relativePath: { eq: "projects/byblos.jpg" }) {
+    byblos: file(relativePath: { regex: "/byblos/" }) {
       ...fluidImage
     }
-    overlay: file(relativePath: { eq: "projects/overlay.jpg" }) {
+    overlay: file(relativePath: { regex: "/overlay/" }) {
       ...fluidImage
     }
-    ceryx: file(relativePath: { eq: "projects/ceryx.jpg" }) {
+    ceryx: file(relativePath: { regex: "/ceryx/" }) {
       ...fluidImage
     }
-    gridbase: file(relativePath: { eq: "projects/gridbase.jpg" }) {
+    gridbase: file(relativePath: { regex: "/gridbase/" }) {
+      ...fluidImage
+    }
+    luminositygarage: file(relativePath: { regex: "/luminositygarage/" }) {
+      ...fluidImage
+    }
+    peerkat: file(relativePath: { regex: "/peerkat/" }) {
+      ...fluidImage
+    }
+    smartmirror: file(relativePath: { regex: "/smartmirror/" }) {
+      ...fluidImage
+    }
+    hq2: file(relativePath: { regex: "/hq2/" }) {
       ...fluidImage
     }
   }

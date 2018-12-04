@@ -1,5 +1,5 @@
 import React from 'react';
-import Helmet from 'react-helmet';
+import SEO from '../components/SEO';
 import Layout from '../components/layout';
 
 import pic03 from '../assets/images/projects/gridbase.jpg';
@@ -7,12 +7,13 @@ import pic08 from '../assets/images/projects/gridbase.jpg';
 import pic09 from '../assets/images/projects/gridbase.jpg';
 import pic10 from '../assets/images/projects/gridbase.jpg';
 
-const Elements = props => (
+const Elements = ({ location }) => (
   <Layout>
-    <Helmet>
-      <title>Elements - Forty by HTML5 UP</title>
-      <meta name="description" content="Elements Page" />
-    </Helmet>
+    <SEO
+      title="Projects"
+      description="Projects within the Luminosity Lab."
+      location={location}
+    />
 
     <div id="main" className="alt">
       <section id="one">

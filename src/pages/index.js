@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import Helmet from 'react-helmet';
+import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import Banner from '../components/Banner';
+import SEO from '../components/SEO';
 
 import guardianDronesOne from '../assets/images/guardian-drones-1.jpg';
 // import pic02 from '../assets/images/pic02.jpg';
@@ -15,14 +15,10 @@ class HomeIndex extends React.Component {
   render() {
     return (
       <Layout>
-        <Helmet
+        <SEO
           title="Luminosity | Beginning the Future."
-          meta={
-            [
-              // { name: 'description', content: 'Sample' },
-              // { name: 'keywords', content: 'sample, something' },
-            ]
-          }
+          description="Luminosity | Beginning the Future."
+          location={this.props.location}
         />
 
         <Banner
@@ -123,4 +119,3 @@ export const fluidImage = graphql`
     }
   }
 `;
-

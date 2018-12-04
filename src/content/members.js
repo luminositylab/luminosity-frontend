@@ -1,4 +1,4 @@
-export default [
+module.exports = [
   {
     name: 'Mark Naufel',
     description: 'Visionary',

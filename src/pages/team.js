@@ -1,21 +1,16 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import Helmet from 'react-helmet';
+import SEO from '../components/SEO';
 import Layout from '../components/layout';
 import Banner from '../components/Banner';
 import members from '../content/members';
 
 import teamWorkVideo from '../assets/videos/team-work-blurry.mp4';
 
-// const translateProjectTitleToPath = title =>
-//   title.replace(/\s+/g, '-').toLowerCase();
-
 const createHeadshot = ({ name, description, image }) => (
   <div key={name} className="container">
-    <div className="image">
-      {image && <Img fluid={image} alt={name} />}
-    </div>
+    <div className="image">{image && <Img fluid={image} alt={name} />}</div>
     <div className="content">
       <div>
         <header>
@@ -27,12 +22,13 @@ const createHeadshot = ({ name, description, image }) => (
   </div>
 );
 
-const Team = ({ data }) => (
+const Team = ({ data, location }) => (
   <Layout>
-    <Helmet>
-      <title>The Team | The Luminosity Lab</title>
-      <meta name="description" content="Team" />
-    </Helmet>
+    <SEO
+      title="The Team"
+      description="The team which composes the Luminosity Lab."
+      location={location}
+    />
 
     <Banner
       title={'The Team'}

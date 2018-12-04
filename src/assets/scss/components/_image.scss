@@ -48,8 +48,9 @@
 
 		&.main {
 			display: block;
-			margin: (_size(element-margin) * 1.25) 0;
+			margin: (_size(element-margin) * 1.25) auto;
 			width: 100%;
+			max-width: 800px;
 
 			img {
 				width: 100%;

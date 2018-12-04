@@ -12,12 +12,12 @@ const Menu = props => (
           </Link>
         </li>
         <li>
-          <Link onClick={props.onToggleMenu} to="/projects">
+          <Link onClick={props.onToggleMenu} to="/projects/">
             Projects
           </Link>
         </li>
         <li>
-          <Link onClick={props.onToggleMenu} to="/team">
+          <Link onClick={props.onToggleMenu} to="/team/">
             The Team
           </Link>
         </li>
