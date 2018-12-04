@@ -1,5 +1,5 @@
 const translateProjectTitleToPath = title =>
-  title.replace(/\s+/g, '').toLowerCase();
+  title.replace(/\s+/g, '-').toLowerCase();
 
 const projects = [
   {
@@ -47,7 +47,8 @@ const projects = [
   },
   {
     title: 'HQ2',
-    description: 'A re-designed city around an ultramodern business headquarters.'
+    description:
+      'A re-designed city around an ultramodern business headquarters.'
   }
 ];
 
