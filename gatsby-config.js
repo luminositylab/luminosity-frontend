@@ -6,8 +6,8 @@ module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
     siteUrl: config.siteUrl + pathPrefix,
-    title: 'The Luminosity Lab | Forming the future.',
-    description: 'The Luminosity Lab | Forming the future.'
+    title: config.siteTitle,
+    description: config.siteDescription,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -55,17 +55,6 @@ module.exports = {
         trackingId: config.googleAnalyticsId
       }
     },
-    'gatsby-plugin-offline'
-    // {
-    //   resolve: 'gatsby-plugin-offline',
-    //   options: {
-    //     runtimeCaching: [
-    //       {
-    //         urlPattern: /^https?:.*\.(mp4)$/,
-    //         handler: `networkOnly`
-    //       }
-    //     ]
-    //   }
-    // }
+    // 'gatsby-plugin-offline'
   ]
 };

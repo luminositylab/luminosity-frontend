@@ -4,8 +4,6 @@ import SEO from '../components/SEO';
 import Img from 'gatsby-image';
 import Layout from '../components/layout';
 
-// import pic11 from '../assets/images/projects/byblos.jpg';
-
 export default ({ data, pageContext: { project }, location }) => (
   <Layout>
     <SEO

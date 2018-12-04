@@ -1,4 +1,5 @@
 import React from 'react';
+import { HomeRounded, PhoneRounded, MailRounded } from '@material-ui/icons';
 
 const Contact = props => (
   <section id="contact">
@@ -20,21 +21,31 @@ const Contact = props => (
         <section>
           <a href="mailto:luminosity@asu.edu">
             <div className="contact-method">
-              <span className="icon alt fa-envelope" />
-              <a>luminosity@asu.edu</a>
+              <a>
+                <span className="icon alt">
+                  <MailRounded />
+                </span>
+                luminosity@asu.edu
+              </a>
             </div>
           </a>
         </section>
         <section>
           <div className="contact-method">
-            <span className="icon alt fa-phone" />
-            <a href="tel:8552785080">(855) 278 5080</a>
+            <a href="tel:8552785080">
+              <span className="icon alt">
+                <PhoneRounded />
+              </span>
+              (855) 278 5080
+            </a>
           </div>
         </section>
         <section>
           <div className="contact-method">
-            <span className="icon alt fa-home" />
             <a href="https://goo.gl/maps/GWM6ghoZZt62">
+              <span className="icon alt">
+                <HomeRounded />
+              </span>
               300 E University Dr
               <br />
               Tempe, AZ 85281

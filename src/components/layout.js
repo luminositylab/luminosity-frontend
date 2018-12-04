@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import 'typeface-montserrat';
 
 import '../assets/scss/main.scss';
 import Header from './Header';

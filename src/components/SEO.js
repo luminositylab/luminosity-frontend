@@ -25,6 +25,7 @@ const SEO = ({ title, description, location }) => {
       <html lang={config.siteLanguage} />
       <title>{pageTitle}</title>
       <meta name="description" content={pageDescription} />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <script type="application/ld+json">
         {JSON.stringify(schemaOrgJSONLD)}
       </script>

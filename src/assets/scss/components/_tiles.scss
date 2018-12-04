@@ -27,7 +27,6 @@
         '-webkit-filter 1s ease'
       )
     );
-    @include padding(4em, 4em);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,11 +39,13 @@
     width: 100%;
 
     .image {
-      display: none;
+      // display: none;
+      width: 100%;
     }
 
     header {
-      position: relative;
+      @include padding(4em, 4em);
+      position: absolute;
       z-index: 3;
     }
 
@@ -153,22 +154,26 @@
 
   @include breakpoint(large) {
     article {
-      @include padding(4em, 3em);
-      height: 30vh;
+      header {
+        @include padding(4em, 3em);
+      }
       max-height: 30em;
       min-height: 20em;
     }
   }
 
-  @include breakpoint(medium) {
-    article {
-      width: 50% !important;
-    }
-  }
+  // @include breakpoint(medium) {
+  //   article {
+  //     width: 50% !important;
+  //   }
+  // }
 
   @include breakpoint(small) {
     article {
-      @include padding(3em, 1.5em);
+      header {
+        @include padding(3em, 1.5em);
+      }
+
       height: 16em;
       max-height: none;
       min-height: 0;

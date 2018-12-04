@@ -1,15 +1,9 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import Layout from '../components/layout';
 import Banner from '../components/Banner';
 import SEO from '../components/SEO';
-
-import guardianDronesOne from '../assets/images/guardian-drones-1.jpg';
-// import pic02 from '../assets/images/pic02.jpg';
-// import pic03 from '../assets/images/pic03.jpg';
-// import pic04 from '../assets/images/pic04.jpg';
-// import pic05 from '../assets/images/pic05.jpg';
-// import pic06 from '../assets/images/pic06.jpg';
 
 class HomeIndex extends React.Component {
   render() {
@@ -36,7 +30,19 @@ class HomeIndex extends React.Component {
 
         <div id="main">
           <section id="one" className="tiles">
-            <article style={{ backgroundImage: `url(${guardianDronesOne})` }}>
+            <article>
+              <div className="image">
+                {this.props.data.guardianDrones1 &&
+                  this.props.data.guardianDrones1.childImageSharp &&
+                  this.props.data.guardianDrones1.childImageSharp.fluid && (
+                    <Img
+                      fluid={
+                        this.props.data.guardianDrones1.childImageSharp.fluid
+                      }
+                      alt={'Projects'}
+                    />
+                  )}
+              </div>
               <header className="major">
                 <h3>Projects</h3>
                 <p>
@@ -116,6 +122,24 @@ export const fluidImage = graphql`
       fluid(maxWidth: 800) {
         ...GatsbyImageSharpFluid_withWebp
       }
+    }
+  }
+`;
+
+export const fluidImageHero = graphql`
+  fragment fluidImageHero on File {
+    childImageSharp {
+      fluid(maxWidth: 2000) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+  }
+`;
+
+export const query = graphql`
+  query {
+    guardianDrones1: file(relativePath: { eq: "guardian-drones-1.jpg" }) {
+      ...fluidImageHero
     }
   }
 `;

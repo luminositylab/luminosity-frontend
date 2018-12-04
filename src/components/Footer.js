@@ -1,14 +1,13 @@
 import React from 'react';
+import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 const Footer = props => (
   <footer id="footer">
     <div className="inner">
       <ul className="icons">
         <li>
-          <a
-            href="https://twitter.com/luminositylab"
-            className="icon alt fa-twitter"
-          >
+          <a href="https://twitter.com/luminositylab" className="icon alt">
+            <FaTwitter />
             <span className="label">Twitter</span>
           </a>
         </li>
@@ -23,27 +22,23 @@ const Footer = props => (
           </a>
         </li> */}
         <li>
-          <a
-            href="https://github.com/luminositylab"
-            className="icon alt fa-github"
-          >
+          <a href="https://github.com/luminositylab" className="icon alt">
+            <FaGithub />
             <span className="label">GitHub</span>
           </a>
         </li>
         <li>
           <a
             href="https://www.linkedin.com/company/the-luminosity-lab"
-            className="icon alt fa-linkedin"
+            className="icon alt"
           >
+            <FaLinkedin />
             <span className="label">LinkedIn</span>
           </a>
         </li>
       </ul>
       <ul className="copyright">
         <li>&copy; {new Date().getFullYear()} The Luminosity Lab</li>
-        {/* <li>
-          Design: <a href="https://html5up.net">HTML5 UP</a>
-        </li> */}
       </ul>
     </div>
   </footer>
