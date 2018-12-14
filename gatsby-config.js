@@ -7,12 +7,13 @@ module.exports = {
   siteMetadata: {
     siteUrl: config.siteUrl + pathPrefix,
     title: config.siteTitle,
-    description: config.siteDescription,
+    description: config.siteDescription
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-robots-txt',
     'gatsby-plugin-sitemap',
+    `gatsby-plugin-netlify-cms`,
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -54,7 +55,7 @@ module.exports = {
       options: {
         trackingId: config.googleAnalyticsId
       }
-    },
+    }
     // 'gatsby-plugin-offline'
   ]
 };

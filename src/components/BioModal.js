@@ -7,35 +7,33 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Slide from '@material-ui/core/Slide';
 
-function Transition(props) {
-  return <Slide direction="up" {...props} />;
-}
-
-const BioModal = ({ isBioOpen, member, handleClose }) => (
-  <Dialog
-    open={isBioOpen}
-    TransitionComponent={Transition}
-    keepMounted
-    onClose={handleClose}
-    aria-labelledby="alert-dialog-slide-title"
-    aria-describedby="alert-dialog-slide-description"
-  >
-    <DialogTitle id="alert-dialog-slide-title">{member.name}</DialogTitle>
-    <DialogContent>
-      <DialogContentText id="alert-dialog-slide-description">
-        Let Google help apps determine location. This means sending anonymous
-        location data to Google, even when no apps are running.
-      </DialogContentText>
-    </DialogContent>
-    <DialogActions>
-      <Button onClick={handleClose} color="primary">
-        Disagree
-      </Button>
-      <Button onClick={handleClose} color="primary">
-        Agree
-      </Button>
-    </DialogActions>
-  </Dialog>
+const BioModal = props => (
+  <nav id="menu">
+    <div className="inner">{console.log(console.log(props))}</div>
+    <a className="close" onClick={props.handleClose} href="javascript:;">
+      Close
+    </a>
+  </nav>
+  // <Dialog
+  //   open={isBioOpen}
+  //   TransitionComponent={Transition}
+  //   keepMounted
+  //   onClose={handleClose}
+  //   aria-labelledby="alert-dialog-slide-title"
+  //   aria-describedby="alert-dialog-slide-description"
+  // >
+  //   <DialogTitle id="alert-dialog-slide-title">{member.name}</DialogTitle>
+  //   <DialogContent>
+  //     <DialogContentText id="alert-dialog-slide-description">
+  //       {member.description}
+  //     </DialogContentText>
+  //   </DialogContent>
+  //   <DialogActions>
+  //     <Button onClick={handleClose} color="primary">
+  //       Close
+  //     </Button>
+  //   </DialogActions>
+  // </Dialog>
 );
 
 export default BioModal;

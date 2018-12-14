@@ -60,6 +60,7 @@ class Team extends React.Component {
       {}
     );
 
+
     return (
       <Layout>
         <SEO
@@ -76,9 +77,9 @@ class Team extends React.Component {
           video={teamWorkVideo}
         />
 
-        <div id="main">
-          <BioModal {...this.state} handleClose={this.handleClose} />
+        <BioModal {...this.state} handleClose={this.handleClose} />
 
+        <div id="main">
           <section id="one" className="headshots">
             <div className="members">
               {leadership.map(e =>
@@ -111,7 +112,7 @@ export const query = graphql`
   query {
     headshotImages: allFile(
       sort: { order: ASC, fields: [absolutePath] }
-      filter: { relativePath: { regex: "/headshots/.*/" } }
+      filter: { relativePath: { regex: "/members/.*/" } }
     ) {
       edges {
         node {

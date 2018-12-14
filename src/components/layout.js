@@ -15,7 +15,6 @@ class Layout extends React.Component {
       isMenuVisible: false,
       loading: 'is-loading'
     };
-    this.handleToggleMenu = this.handleToggleMenu.bind(this);
   }
 
   componentDidMount() {
@@ -30,7 +29,7 @@ class Layout extends React.Component {
     }
   }
 
-  handleToggleMenu() {
+  handleToggleMenu = () => {
     this.setState({
       isMenuVisible: !this.state.isMenuVisible
     });
@@ -48,7 +47,7 @@ class Layout extends React.Component {
         <div id="wrapper">
           <Header onToggleMenu={this.handleToggleMenu} />
           {React.Children.map(children, child =>
-            React.cloneElement(child, { onToggleMenu: this.onToggleMenu })
+            React.cloneElement(child, { onToggleMenu: this.handleToggleMenu })
           )}
           <Contact />
           <Footer />
