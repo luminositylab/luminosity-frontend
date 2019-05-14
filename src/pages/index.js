@@ -18,8 +18,7 @@ class HomeIndex extends React.Component {
         <Banner
           description={
             <React.Fragment>
-              The Luminosity Lab combines some of the most gifted students
-              across Arizona State University.
+              The Luminosity Lab serves as an interdisciplinary hub for some of the most talented and high-performing students at Arizona State University.
               <br />
               <br />
               We build radical solutions around the world's most complex
