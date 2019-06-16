@@ -8,7 +8,7 @@ import projects from '../content/projects';
 
 import mockUpVideo from '../assets/videos/mock-up.mp4';
 
-const createSection = ({ title, path, description, image, video }) => (
+const createSection = ({ title, path, description, info, image, video }) => (
   <section key={title}>
     <Link to={`/projects/${path}`} className="image">
       {image && <Img fluid={image} alt={title} />}
