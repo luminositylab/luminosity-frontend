@@ -12,7 +12,7 @@ const projects = [
     title: 'KIP',
     description:
       'An affordable, open-source, hands-on robotics platform for teaching a breadth of relevant hardware and software skills to students of all ages.',
-      info: 'This is a test',
+      info: 'KIP is an open-source, 3D printable robot that allows individuals of all ages to learn a full breadth of technical skills, from software development and machine learning, to circuits and mechanics. Once built, a user can fully customize their KIP’s hardware and software, allowing for endless creativity. KIP can be used as both a learning tool, as well as a low-cost robotics platform for conducting research and experimentation.',
   },
   {
     title: 'Trident One',
