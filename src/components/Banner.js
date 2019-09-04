@@ -1,25 +1,35 @@
 import React from 'react';
-import heroVideo from '../assets/videos/waves-splashing.mp4';
+import Img from 'gatsby-image';
 
-const Banner = props => (
-  <section id="banner" className={props.title ? 'minor' : 'major'}>
-    <video
-      className="video"
-      src={props.video || heroVideo}
-      preload="auto"
-      autoPlay
-      muted
-      loop
-      playsInline
-      style={{ width: '100%', height: '100%', ...props.videoStyle }}
-    />
+const Banner = ({ title, video, videoStyle, image, description }) => (
+  <section id="banner" className={title ? 'minor' : 'major'}>
+    {video && (
+      <video
+        className="video"
+        src={video}
+        preload="auto"
+        autoPlay
+        muted
+        loop
+        playsInline
+        style={{ width: '100%', height: '100%', ...videoStyle }}
+      />
+    )}
+    {image && (
+      <Img
+        style={{ position: 'absolute', width: '100%', height: '100%' }}
+        className="video"
+        fluid={image}
+        alt={title}
+      />
+    )}
     <div className="inner">
-      {props.title && (
+      {title && (
         <header className="major">
-          <h1>{props.title}</h1>
+          <h1>{title}</h1>
         </header>
       )}
-      <p>{props.description}</p>
+      <p>{description}</p>
     </div>
   </section>
 );

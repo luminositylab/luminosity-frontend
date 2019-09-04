@@ -16,6 +16,11 @@ class HomeIndex extends React.Component {
         />
 
         <Banner
+          image={
+            this.props.data.heroImageIntro &&
+            this.props.data.heroImageIntro.childImageSharp &&
+            this.props.data.heroImageIntro.childImageSharp.fluid
+          }
           description={
             <React.Fragment>
               Luminosity is an interdisciplinary research and development lab
@@ -162,6 +167,9 @@ export const fluidImageHero = graphql`
 
 export const query = graphql`
   query {
+    heroImageIntro: file(relativePath: { eq: "computer-with-cables.jpg" }) {
+      ...fluidImageHero
+    }
     heroImageProjects: file(relativePath: { eq: "file-1.jpg" }) {
       ...fluidImageHero
     }
