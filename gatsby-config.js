@@ -13,7 +13,6 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-robots-txt',
     'gatsby-plugin-sitemap',
-    `gatsby-plugin-netlify-cms`,
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
