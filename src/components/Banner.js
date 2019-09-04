@@ -29,7 +29,7 @@ const Banner = ({ title, video, videoStyle, image, description }) => (
           <h1>{title}</h1>
         </header>
       )}
-      <p>{description}</p>
+      <p style={image && { float: 'right' }}>{description}</p>
     </div>
   </section>
 );
