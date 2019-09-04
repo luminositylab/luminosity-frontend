@@ -7,8 +7,65 @@
 /* Headshots */
 
 .headshots {
+  #overlay {
+    @include vendor(
+      'transition',
+      (
+        'transform #{_duration(menu)} ease',
+        'opacity #{_duration(menu)} ease',
+        'visibility #{_duration(menu)}'
+      )
+    );
+    @include vendor('align-items', 'center');
+    @include vendor('display', 'flex');
+    @include vendor('justify-content', 'center');
+    @include vendor('pointer-events', 'none');
+    background: transparentize(_palette(bg), 0.1);
+    box-shadow: none;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 3em 2em;
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+    width: 100%;
+    z-index: _misc(z-index-base) + 2;
+  
+    .inner {
+      @include vendor(
+        'transition',
+        (
+          'transform #{_duration(menu)} ease-out',
+          'opacity #{_duration(menu)} ease',
+          'visibility #{_duration(menu)}'
+        )
+      );
+      @include vendor('transform', 'rotateX(20deg)');
+      -webkit-overflow-scrolling: touch;
+      max-width: 100%;
+      max-height: 100vh;
+      opacity: 0;
+      overflow: auto;
+      text-align: center;
+      visibility: hidden;
+      width: 18em;
+    }
+  }
+
   h3 {
     text-align: center;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 1.2em;
   }
 
   > .members {
@@ -48,6 +105,7 @@
         opacity: 0.5;
         height: 100%;
         width: 100%;
+        border: 1px solid black;
       }
     }
   }

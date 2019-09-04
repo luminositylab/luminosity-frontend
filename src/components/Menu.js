@@ -11,7 +11,7 @@ const Menu = props => (
             Home
           </Link>
         </li>
-         <li>
+        <li>
           <Link onClick={props.onToggleMenu} to="/about/">
             About
           </Link>
@@ -21,7 +21,12 @@ const Menu = props => (
             Projects
           </Link>
         </li>
-           <li>
+        <li>
+          <Link onClick={props.onToggleMenu} to="/hackathons/">
+            Hackathons
+          </Link>
+        </li>
+        <li>
           <Link onClick={props.onToggleMenu} to="/process/">
             Our Process
           </Link>
@@ -31,11 +36,11 @@ const Menu = props => (
             The Team
           </Link>
         </li>
-          <li>
+        {/* <li>
           <Link onClick={props.onToggleMenu} to="/partners/">
             Strategic Partners
           </Link>
-        </li>
+        </li> */}
         {/* <li>
           <Link onClick={props.onToggleMenu} to="/generic">
             Generic

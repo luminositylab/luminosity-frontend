@@ -1,32 +1,58 @@
 import React from 'react';
 import { HomeRounded, PhoneRounded, MailRounded } from '@material-ui/icons';
+import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 const Contact = props => (
   <section id="contact">
     <div className="inner">
       <section>
-        <form method="post" action="#">
-          <div className="field first">
-            <label htmlFor="email">Email</label>
-            <input type="text" name="email" id="email" />
-          </div>
-          <ul className="actions">
+        <div className="inner">
+          <ul className="icons">
             <li>
-              <input type="submit" value="Send Message" className="special" />
+              <a href="https://twitter.com/luminositylab" className="icon alt">
+                <FaTwitter />
+                <span className="label">Twitter</span>
+              </a>
+            </li>
+            {/*<li>
+          <a href="#" className="icon alt fa-facebook">
+            <span className="label">Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" className="icon alt fa-instagram">
+            <span className="label">Instagram</span>
+          </a>
+        </li> */}
+            <li>
+              <a href="https://github.com/luminositylab" className="icon alt">
+                <FaGithub />
+                <span className="label">GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/the-luminosity-lab"
+                className="icon alt"
+              >
+                <FaLinkedin />
+                <span className="label">LinkedIn</span>
+              </a>
             </li>
           </ul>
-        </form>
+          <ul className="copyright">
+            <li>&copy; {new Date().getFullYear()} The Luminosity Lab</li>
+          </ul>
+        </div>
       </section>
       <section className="split">
         <section>
           <a href="mailto:luminosity@asu.edu">
             <div className="contact-method">
-              <a>
-                <span className="icon alt">
-                  <MailRounded />
-                </span>
-                luminosity@asu.edu
-              </a>
+              <span className="icon alt">
+                <MailRounded />
+              </span>
+              luminosity@asu.edu
             </div>
           </a>
         </section>

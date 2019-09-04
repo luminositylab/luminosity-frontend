@@ -60,7 +60,6 @@ class Team extends React.Component {
       {}
     );
 
-
     return (
       <Layout>
         <SEO
@@ -72,15 +71,15 @@ class Team extends React.Component {
         <Banner
           title={'The Team'}
           description={
-            'We are made up of brilliant individuals from around the globe.'
+            'We are made up of brilliant people from around the world.'
           }
           video={teamWorkVideo}
         />
 
-        <BioModal {...this.state} handleClose={this.handleClose} />
-
         <div id="main">
           <section id="one" className="headshots">
+            <BioModal {...this.state} handleClose={this.handleClose} />
+            <div className="title">Leadership</div>
             <div className="members">
               {leadership.map(e =>
                 this.createHeadshot({
@@ -91,6 +90,7 @@ class Team extends React.Component {
             </div>
           </section>
           <section id="two" className="headshots">
+            <div className="title">Students</div>
             <div className="members">
               {members.map(e =>
                 this.createHeadshot({
@@ -99,6 +99,7 @@ class Team extends React.Component {
                 })
               )}
             </div>
+            <div className="subtitle">...and many more!</div>
           </section>
         </div>
       </Layout>

@@ -1,14 +1,39 @@
 import React from 'react';
-import Layout from '../components/layout';
+import SEO from '../../components/SEO';
+import Banner from '../../components/Banner';
+import Layout from '../../components/layout';
+import heroVideo from '../../assets/videos/typing-keyboard.mp4';
 
+const videoBlur = `blur(10px)`;
 
-const About = () => (
+const BankOfTheWest = () => (
   <Layout>
+    <SEO
+        title="Hackathons"
+        description="Hackathons hosted by Luminosity Lab."
+        // location={location}
+      />
+
+      <Banner
+        title={'SolutionsX Hackathon'}
+        description={
+          'Hosted by Bank of the West'
+        }
+        video={heroVideo}
+        videoStyle={{
+          '-webkit-filter': videoBlur,
+          '-moz-filter': videoBlur,
+          '-o-filter': videoBlur,
+          '-ms-filter': videoBlur,
+          filter: videoBlur
+        }}
+      />
+
     <div id="main" className="alt">
       <section id="one">
         <div className="inner">
           <h1>About Us</h1>
-
+          
           <p>
             The Luminosity Lab is a team of high achieving students from diverse
             backgrounds that were hand-picked by ASU academics and peers to
@@ -40,11 +65,11 @@ const About = () => (
             challenges.
           </p>
 
-          {/* <h3>Core Competencies</h3> */}
+          <h3>Core Competencies</h3>
         </div>
       </section>
     </div>
   </Layout>
 );
 
-export default About;
+export default BankOfTheWest;

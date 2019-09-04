@@ -20,21 +20,21 @@
 
 // Font.
 	$font: (
-		family:				('Montserrat', Helvetica, sans-serif),
+		family:				('Carrois Gothic SC', Helvetica, sans-serif),
 		family-fixed:		('Courier New', monospace),
 		weight:				300,
-		weight-bold:		600,
+		weight-bold:		500,
 		letter-spacing:		0.025em,
 		letter-spacing-alt:	0.15em
 	);
 
 // Palette.
 	$palette: (
-		bg:					rgb(27, 27, 27),
-		bg-alt:				#1b1b1b,
+		bg:					#131313,
+		bg-alt:				#131313,
 		fg:					#ffffff,
 		fg-bold:			#ffffff,
-		fg-light:			rgba(244,244,255,0.2),
+		fg-light:			rgba(8, 8, 8, 0.2),
 		border:				rgba(212,212,255,0.1),
 		border-bg:			rgba(212,212,255,0.035),
 		highlight:			#9bf1ff,
