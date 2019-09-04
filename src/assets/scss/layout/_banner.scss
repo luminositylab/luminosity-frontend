@@ -40,21 +40,14 @@
     z-index: 1;
   }
 
-
   h1 {
     font-size: 3.25em;
     cursor: text;
   }
 
-  @include breakpoint(medium) {
-    > .video {
-      right: 0;
-      top: 0;
-    }
-  }
-
   > .video {
-    // width: 100%;
+    right: 0;
+    top: 0;
     position: absolute;
     z-index: 0;
     object-fit: cover;

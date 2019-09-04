@@ -59,7 +59,8 @@ class HomeIndex extends React.Component {
                   this.props.data.heroImageHackathons.childImageSharp.fluid && (
                     <Img
                       fluid={
-                        this.props.data.heroImageHackathons.childImageSharp.fluid
+                        this.props.data.heroImageHackathons.childImageSharp
+                          .fluid
                       }
                       alt={'Projects'}
                     />

@@ -5,15 +5,14 @@ const Banner = props => (
   <section id="banner" className={props.title ? 'minor' : 'major'}>
     <video
       className="video"
-      style={props.videoStyle}
-      playsInline
+      src={props.video || heroVideo}
+      preload="auto"
       autoPlay
       muted
       loop
-    >
-      <source src={props.video || heroVideo} type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+      playsInline
+      style={{ width: '100%', height: '100%', ...props.videoStyle }}
+    />
     <div className="inner">
       {props.title && (
         <header className="major">
