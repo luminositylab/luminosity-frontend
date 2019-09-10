@@ -14,8 +14,8 @@ const BankOfTheWest = ({ data }) => {
   return (
     <Layout>
       <SEO
-        title="Hackathons"
-        description="Hackathons hosted by Luminosity Lab."
+        title="SolutionsX Hackathon"
+        description="SolutionsX Hackathon hosted by Bank of the West in collaboration with ASU's Luminosity Lab."
         // location={location}
       />
 
