@@ -4,7 +4,7 @@ const BioModal = ({ open, title, description, handleClose }) =>
   open ? (
     <div className="biography">
       <div className="inner">
-        <h2>{title}</h2>
+        <h1>{title}</h1>
         <div>{description}</div>
       </div>
       <a

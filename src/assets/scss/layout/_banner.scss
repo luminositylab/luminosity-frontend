@@ -119,6 +119,13 @@
     min-height: 30em;
     max-height: 40em;
   }
+  
+  &.fit {
+    width: 100%;
+		@include breakpoint(small) {
+      height: 50vh;
+    }
+  }
 
   &.style1 {
     &:after {

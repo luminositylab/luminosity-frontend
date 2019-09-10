@@ -2,7 +2,7 @@ import React from 'react';
 import Img from 'gatsby-image';
 
 const Banner = ({ title, video, videoStyle, image, description }) => (
-  <section id="banner" className={title ? 'minor' : 'major'}>
+  <section id="banner" className={title ? 'minor' : 'major fit'}>
     {video && (
       <video
         className="video"

@@ -230,6 +230,7 @@ const BankOfTheWest = ({ data }) => {
                             Solutions Delivery; Data Management; Technology
                             Strategy; Architecture; and Technology Vendor
                             Management. <br />
+                            <br />
                             Based in San Francisco, Sorensen joined Bank of the
                             West in 2009. Prior to serving as CIO, he led the
                             bank's Technology Shared Services Solutions Delivery
@@ -241,11 +242,13 @@ const BankOfTheWest = ({ data }) => {
                             Assurance); Regulatory & Compliance IT programs;
                             Risk and Finance technologies; Business Process
                             Management, and Automation. <br />
+                            <br />
                             Before coming to bank of the West, Sorensen held
                             positions at J.P. Morgan Chase, Washington Mutual,
                             Providian Financial, and NextCard. An active
                             volunteer in Year Up since 2008, Sorensen is a Board
                             Member of Bay Area Chapter. <br />
+                            <br />
                             Sorensen received his BA in Economics from the
                             University of California, Santa Barbara, graduating
                             with Highest Honors.
@@ -300,6 +303,7 @@ const BankOfTheWest = ({ data }) => {
                             contact center call volume, and reduce bottom line
                             expenses through digital efficiency.
                             <br />
+                            <br />
                             Hisham brings a unique analytical and business
                             perspective to overcoming complex challenges in the
                             fast-paced and evolving digital ecosystem. He is an
@@ -309,6 +313,7 @@ const BankOfTheWest = ({ data }) => {
                             anyone. He is also focused on building out high
                             caliber teams and champions developing internal
                             talent.
+                            <br />
                             <br />
                             In his previous role as Head of Emerging Payments &
                             Innovation at TD Bank, Hisham was responsible for
@@ -321,6 +326,7 @@ const BankOfTheWest = ({ data }) => {
                             customers. TD MySpend users hold higher account
                             balances, visit branches less often and experience
                             greater satisfaction with TD Bank.
+                            <br />
                             <br />
                             Hisham Salama is committed to improving and
                             simplifying each customer’s life through digital
@@ -376,13 +382,15 @@ const BankOfTheWest = ({ data }) => {
                             management, government sponsored enterprises (Fannie
                             Mae, Freddie Mac) and asset servicing. Most
                             recently, he worked at PwC as a Director in FS
-                            Advisory Services. Prior to his recent role, he
-                            worked at The Capital Markets Company (Capco), Bank
-                            of New York Mellon, and State Street Corporation.
-                            His educational background includes a M.B.A from
-                            Jacobs School of Management, SUNY Buffalo and an
-                            undergraduate degree in Electrical Engineering from
-                            National Institute of Technology, India.
+                            Advisory Services. <br />
+                            <br />
+                            Prior to his recent role, he worked at The Capital
+                            Markets Company (Capco), Bank of New York Mellon,
+                            and State Street Corporation. His educational
+                            background includes a M.B.A from Jacobs School of
+                            Management, SUNY Buffalo and an undergraduate degree
+                            in Electrical Engineering from National Institute of
+                            Technology, India.
                           </div>
                         )
                       })
@@ -425,6 +433,7 @@ const BankOfTheWest = ({ data }) => {
                             innovation functions. He has been at the Bank for
                             the 6 years, starting as Business Technology Partner
                             for the Commercial and Corporate Banking business.
+                            <br />
                             <br />
                             Previously Charles was in product development at
                             Bank of America, launching commercial banking and
