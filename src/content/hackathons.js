@@ -3,7 +3,7 @@ const translateHackathonTitleToPath = title =>
 
 const hackathons = [
   {
-    title: 'SolutionsX Hackathon',
+    title: 'SolutionsX',
     description: 'Hosted by Bank of the West.'
   }
 ];
