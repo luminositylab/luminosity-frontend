@@ -1,13 +1,30 @@
 import React from 'react';
 import Layout from '../components/layout';
+import SEO from '../components/SEO';
+import Banner from '../components/Banner';
 
-
-const About = () => (
+const About = ({ data }) => (
   <Layout>
+    <SEO
+      title="Hackathons"
+      description="Hackathons hosted by Luminosity Lab."
+      // location={location}
+    />
+
+    <Banner
+      title={'About Us'}
+      // description={'Hosted by Bank of the West'}
+      image={
+        data.heroImageIntro &&
+        data.heroImageIntro.childImageSharp &&
+        data.heroImageIntro.childImageSharp.fluid
+      }
+    />
+
     <div id="main" className="alt">
       <section id="one">
         <div className="inner">
-          <h1>About Us</h1>
+          <h3>Introduction</h3>
 
           <p>
             The Luminosity Lab is a team of high achieving students from diverse
@@ -48,3 +65,11 @@ const About = () => (
 );
 
 export default About;
+
+export const query = graphql`
+  query {
+    heroImageIntro: file(relativePath: { eq: "computer-with-cables.jpg" }) {
+      ...fluidImageHero
+    }
+  }
+`;

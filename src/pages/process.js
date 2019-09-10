@@ -34,7 +34,7 @@ const Process = () => (
     <div id="main">
       <section id="one">
         <div className="inner">
-          <h1>Ideation</h1>
+          <h3>Ideation</h3>
           <div className="image center">
             <img src={ideation} />
           </div>
@@ -51,7 +51,7 @@ const Process = () => (
             patterns, pain points, and specific challenges that we can transform
             into opportunities.
           </p>
-          <h1>Design, Planning, and Analysis </h1>
+          <h3>Design, Planning, and Analysis</h3>
           <p>
             Once a problem statement has been defined, Luminosity engages in a
             rigorous cycle of design, planning, and analysis prior to launching
@@ -70,7 +70,7 @@ const Process = () => (
           <div className="image center">
             <img src={design} />
           </div>
-          <h1>Implementation</h1>
+          <h3>Implementation</h3>
           <p>
             All projects are managed with a proven Agile approach. We utilize
             the Scrum methodology to conduct two-week sprints of development, in
@@ -86,10 +86,7 @@ const Process = () => (
             as needed, as well as to inform the upcoming sprint.
           </p>
 
-          {/* <div className="image center">
-            <img src={agile} />
-          </div> */}
-          <h1>Validation, Verification, Deployment, and Maintenance </h1>
+          <h3>Validation, Verification, Deployment, and Maintenance</h3>
           <p>
             We employ a robust process of validation and verification throughout
             the project life cycle. Quality assurance methods guarantee that our

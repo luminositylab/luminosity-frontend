@@ -26,7 +26,7 @@ const Banner = ({ title, video, videoStyle, image, description }) => (
     <div className="inner">
       {title && (
         <header className="major">
-          <h1>{title}</h1>
+          <h1 style={image && { textAlign: 'right' }}>{title}</h1>
         </header>
       )}
       <p style={image && { float: 'right' }}>{description}</p>
