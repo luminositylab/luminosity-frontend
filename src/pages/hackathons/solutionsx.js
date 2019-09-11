@@ -8,6 +8,29 @@ import Banner from '../../components/Banner';
 import BioModal from '../../components/BioModal';
 import Layout from '../../components/layout';
 
+const Prize = ({ image, title }) => (
+  <div style={{ display: 'flex' }}>
+    <Img
+      style={{
+        width: 150,
+        height: 150,
+        borderRadius: '50%'
+      }}
+      fluid={image}
+      alt={title}
+    />
+    <div
+      style={{
+        marginLeft: '1em',
+        height: '100%',
+        alignSelf: 'center'
+      }}
+    >
+      {title}
+    </div>
+  </div>
+);
+
 const BankOfTheWest = ({ data }) => {
   const [bio, setBio] = React.useState(null);
 
@@ -115,7 +138,10 @@ const BankOfTheWest = ({ data }) => {
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <h3>How long is the hackathon?</h3>
-                  <p>The hackathon will last 30 hours from start to finish.</p>
+                  <p>
+                    The hackathon will last 30 hours from start to finish, with
+                    24 hours of allotted hacking.
+                  </p>
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <h3>What about food?</h3>
@@ -134,7 +160,10 @@ const BankOfTheWest = ({ data }) => {
                   <p>
                     Any ASU student in any degree program and field of study.
                     All skill levels are welcome, from beginner to advanced. You
-                    each have something to bring to the table!
+                    each have something to bring to the table! You'll should
+                    have a familiarity or a willingness to learn at least
+                    front-end or back-end web development, computer science,
+                    UI/UX design, or business analytics & modeling.
                   </p>
                 </Grid>
                 <Grid item xs={12} sm={6}>
@@ -167,6 +196,47 @@ const BankOfTheWest = ({ data }) => {
                   </p>
                 </Grid>
                 <Grid item xs={12}>
+                  <h2>Prizes</h2>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <h3>1st Place</h3>
+
+                  <Prize
+                    title="128GB iPad (Latest)"
+                    image={
+                      data.ipad &&
+                      data.ipad.childImageSharp &&
+                      data.ipad.childImageSharp.fluid
+                    }
+                  />
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <h3>2nd Place</h3>
+                  <Prize
+                    title="Oculus Go"
+                    image={
+                      data.oculus &&
+                      data.oculus.childImageSharp &&
+                      data.oculus.childImageSharp.fluid
+                    }
+                  />
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <h3>3rd Place</h3>
+                  <Prize
+                    title="Drone"
+                    image={
+                      data.drone &&
+                      data.drone.childImageSharp &&
+                      data.drone.childImageSharp.fluid
+                    }
+                  />
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <h3>Remaining Teams</h3>
+                  <p>Additional swag will be given out on-site!</p>
+                </Grid>
+                <Grid item xs={12}>
                   <h2>Where Will The Hackathon Take Place?</h2>
 
                   <p>
@@ -186,7 +256,7 @@ const BankOfTheWest = ({ data }) => {
                   </div>
                 </Grid>
                 <Grid item xs={12}>
-                  <h2>Schedule-at-a-Glance</h2>
+                  <h2>Schedule-at-a-Glance (Subject to Change)</h2>
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <h3>Friday</h3>
@@ -532,6 +602,15 @@ export const query = graphql`
       ...fluidImageHero
     }
     charles: file(relativePath: { eq: "hackathons/judges/charles.png" }) {
+      ...fluidImageHero
+    }
+    ipad: file(relativePath: { eq: "hackathons/ipad.jpg" }) {
+      ...fluidImageHero
+    }
+    drone: file(relativePath: { eq: "hackathons/drone.jpg" }) {
+      ...fluidImageHero
+    }
+    oculus: file(relativePath: { eq: "hackathons/oculus.jpg" }) {
       ...fluidImageHero
     }
   }
