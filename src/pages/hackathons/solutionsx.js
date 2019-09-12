@@ -206,7 +206,7 @@ const BankOfTheWest = ({ data }) => {
                     for you.
                   </p>
                 </Grid>
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12}>
                   <h3>Are there any conduct guidelines?</h3>
                   <p>
                     Yes! Please review the{' '}
