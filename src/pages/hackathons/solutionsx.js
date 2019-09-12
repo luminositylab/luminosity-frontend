@@ -88,6 +88,24 @@ const BankOfTheWest = ({ data }) => {
                       Sign up on Eventbrite to compete!
                     </OutboundLink>
                   </div>
+
+                  <h2>Challenge Statement</h2>
+
+                  <p>
+                    You must be an enrolled Arizona State University student to
+                    participate. Student teams will be given 24 hours of hack
+                    time to design and develop a bank of the future in an effort
+                    to help Bank of the West change banking for good. Student
+                    teams of 2-5 can either be assembled ahead of time or will
+                    be matched at the start of the event. Teams will be required
+                    to use business acumen and technical skills within design
+                    and coding to develop and propose a solution directly to
+                    executives from Bank of the West. By drawing on personal
+                    experience, creativity, and the need to push the envelope,
+                    participants will be able to expand the initial desired
+                    capabilities of a banking platform and create a bank they’d
+                    want to join.
+                  </p>
                 </Grid>
                 <Grid item xs={12}>
                   <h2>FAQ</h2>
@@ -154,6 +172,15 @@ const BankOfTheWest = ({ data }) => {
                 <Grid item xs={12} sm={6}>
                   <h3>Is there a cost?</h3>
                   <p>There is not a cost to register.</p>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <h3>Do I have to stay the whole time?</h3>
+                  <p>
+                    While we recommend you stay the full time of the hackathon,
+                    it’s not a requirement. We understand classes are a priority
+                    and life happens, so if you need to leave and come back
+                    that’s perfectly alright.
+                  </p>
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <h3>Who can register?</h3>
