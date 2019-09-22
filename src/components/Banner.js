@@ -1,37 +1,73 @@
 import React from 'react';
 import Img from 'gatsby-image';
+// import Helmet from 'react-helmet';
 
-const Banner = ({ title, video, videoStyle, image, description }) => (
-  <section id="banner" className={title ? 'minor' : 'major fit'}>
-    {video && (
+
+class Banner extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.myRef = React.createRef()
+  }
+
+  componentDidMount() {
+    
+    this.effect = window.VANTA.NET({
+      el: this.myRef.current,
+      color: 0xffffff,
+      backgroundColor: 0x000000,
+      points: 10,
+      maxDistance: 20
+    })
+  }
+  componentWillUnmount() {
+    if (this.effect) this.effect.destroy()
+  }
+
+  render() {
+    return (
+    
+  <section id="banner" className={this.props.title ? 'minor' : 'major fit'}>
+    {this.props.video && (
       <video
         className="video"
-        src={video}
+        src={this.props.video}
         preload="auto"
         autoPlay
         muted
         loop
         playsInline
-        style={{ width: '100%', height: '100%', ...videoStyle }}
+        style={{ width: '100%', height: '100%', ...this.props.videoStyle }}
       />
     )}
-    {image && (
+    {this.props.image && (
       <Img
         style={{ position: 'absolute', width: '100%', height: '100%' }}
         className="video"
-        fluid={image}
-        alt={title}
+        fluid={this.props.image}
+        alt={this.props.title}
       />
     )}
+    {this.props.gl && (
+       <div style={{height:'922px'}} ref={this.myRef}>
+      {/* <Img
+        style={{ position: 'absolute', width: '100%', height: '100%' }}
+        className="video"
+        fluid={this.props.gl}
+        alt={this.props.title}
+      /> */}
+      </div>
+    )}
     <div className="inner">
-      {title && (
+      {this.props.title && (
         <header className="major">
-          <h1 style={image && { textAlign: 'right' }}>{title}</h1>
+          <h1 style={this.props.image && { textAlign: 'right' }}>{this.props.title}</h1>
         </header>
       )}
-      <p style={image && { float: 'right' }}>{description}</p>
+      <p style={this.props.image && { float: 'right' }}>{this.props.description}</p>
     </div>
   </section>
 );
-
+}
+}
 export default Banner;

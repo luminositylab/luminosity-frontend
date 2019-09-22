@@ -5,6 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^3.6.0",
     "@material-ui/icons": "^3.0.1",
+    "eslint-loader": "^3.0.0",
     "gatsby": "^2.0.0",
     "gatsby-image": "^2.0.22",
     "gatsby-plugin-google-analytics": "^2.0.8",
@@ -23,6 +24,9 @@
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
     "react-icons": "^3.2.2",
+    "react-load-script": "^0.0.6",
+    "react-pure-lifecycle": "^3.0.0",
+    "three": "^0.92.0",
     "typeface-carrois-gothic-sc": "^0.0.72",
     "typeface-roboto": "^0.0.75"
   },
