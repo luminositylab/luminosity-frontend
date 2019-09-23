@@ -82,7 +82,7 @@ const BankOfTheWest = ({ data }) => {
                       marginBottom: '.5em'
                     }}
                   >
-                    <OutboundLink href="https://solutionsxhackathon_bow.eventbrite.com/">
+                    <OutboundLink href="https://actionml-hackathon.eventbrite.com/">
                       Sign up on Eventbrite to compete!
                     </OutboundLink>
                   </div>
@@ -288,9 +288,8 @@ const BankOfTheWest = ({ data }) => {
                   <h2>Where Will The Hackathon Take Place?</h2>
 
                   <p>
-                    The hackathon will take place on the first floor of ECG on
-                    ASU's Tempe Campus. See the map below for the exact
-                    location!
+                    The hackathon will take place on ASU's Tempe Campus. The
+                    exact location is yet to be determined!
                   </p>
                   <div className="map" style={{ textAlign: 'center' }}>
                     <iframe
@@ -298,7 +297,7 @@ const BankOfTheWest = ({ data }) => {
                       height="450"
                       frameborder="0"
                       style={{ border: 0 }}
-                      src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJDYmAUNwIK4cRR7d4s2RKef8&key=AIzaSyBeXrO61yjuZ8phjJ6sutCmr1citbu6-s8"
+                      src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJD1QzO9sIK4cRMzA8R39xbmY&key=AIzaSyBeXrO61yjuZ8phjJ6sutCmr1citbu6-s8"
                       allowfullscreen
                     />
                   </div>
@@ -332,7 +331,7 @@ const BankOfTheWest = ({ data }) => {
                     <br />
                   </p>
                 </Grid>
-                <Grid item xs={12}>
+                {/* <Grid item xs={12}>
                   <h2>Judges</h2>
                 </Grid>
                 <Grid item xs={12} sm={6}>
@@ -590,7 +589,7 @@ const BankOfTheWest = ({ data }) => {
                       Charles Bang
                     </div>
                   </div>
-                </Grid>
+                </Grid> */}
                 <Grid item xs={12}>
                   <h2>Sponsors</h2>
 
@@ -630,7 +629,7 @@ const BankOfTheWest = ({ data }) => {
                   marginTop: '.5em'
                 }}
               >
-                <OutboundLink href="https://solutionsxhackathon_bow.eventbrite.com/">
+                <OutboundLink href="https://actionml-hackathon.eventbrite.com/">
                   Sign up now!
                 </OutboundLink>
               </div>
