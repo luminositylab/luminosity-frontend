@@ -288,8 +288,7 @@ const BankOfTheWest = ({ data }) => {
                   <h2>Where Will The Hackathon Take Place?</h2>
 
                   <p>
-                    The hackathon will take place on ASU's Tempe Campus. The
-                    exact location is yet to be determined!
+                    The hackathon will take place in the Arizona Ballroom at the MU.
                   </p>
                   <div className="map" style={{ textAlign: 'center' }}>
                     <iframe
@@ -297,7 +296,7 @@ const BankOfTheWest = ({ data }) => {
                       height="450"
                       frameborder="0"
                       style={{ border: 0 }}
-                      src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJD1QzO9sIK4cRMzA8R39xbmY&key=AIzaSyBeXrO61yjuZ8phjJ6sutCmr1citbu6-s8"
+                      src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJCUgLoNwIK4cRWxJrA3jUXFQ&key=AIzaSyBeXrO61yjuZ8phjJ6sutCmr1citbu6-s8"
                       allowfullscreen
                     />
                   </div>
