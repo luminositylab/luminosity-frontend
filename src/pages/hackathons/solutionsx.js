@@ -569,6 +569,110 @@ const BankOfTheWest = ({ data }) => {
                     </div>
                   </div>
                 </Grid>
+                <Grid item xs={12} sm={6}>
+                  <div
+                    style={{ display: 'flex', cursor: 'pointer' }}
+                    onClick={() =>
+                      setBio({
+                        title: 'Ian Poinsenet',
+                        description: (
+                          <div>
+                            Ian Poinsenet is Innovation and Transformation
+                            Leader at BNP Paribas International Retail Banking.
+                            Based in Paris (France), his role is to accompany
+                            the branches of the Group in Turkey, Poland,
+                            Ukraine, Africa and the US, building their
+                            innovation programs from ideation to acceleration
+                            and facilitating their transformation initiatives.
+                            <br />
+                            <br />
+                            He has a 25-year experience in Innovation and Change
+                            Management in various industries such as Telco,
+                            Consultancy, Insurnace and Banking. His main focuses
+                            are creativity, sustainability, intrapreneurship,
+                            corporate and employee engagement.
+                          </div>
+                        )
+                      })
+                    }
+                  >
+                    <Img
+                      style={{
+                        width: 100,
+                        height: 100,
+                        borderRadius: '50%'
+                      }}
+                      fluid={
+                        data.ian &&
+                        data.ian.childImageSharp &&
+                        data.ian.childImageSharp.fluid
+                      }
+                      alt={'Ian Poinsenet'}
+                    />
+                    <div
+                      style={{
+                        marginLeft: '1em',
+                        height: '100%',
+                        alignSelf: 'center'
+                      }}
+                    >
+                      Ian Poinsenet
+                    </div>
+                  </div>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <div
+                    style={{ display: 'flex', cursor: 'pointer' }}
+                    onClick={() =>
+                      setBio({
+                        title: 'Janet Covey',
+                        description: (
+                          <div>
+                            As the VP Senior Product Design Manager at Bank of
+                            the West, Covey’s work focuses on ways to simplify,
+                            clarify and streamline the digital customer
+                            experience. She recognizes that individual
+                            experiences don’t look alike, and that the best
+                            design is able to bridge these differences. <br />
+                            <br />
+                            The rise of digital content over the past few
+                            decades has made her more committed than ever to
+                            focusing on diversity when creating customer
+                            experiences. This currently includes working on the
+                            redesign of the bank’s mobile app to meet the needs
+                            of modern consumers. An avid traveler, Janet seeks
+                            to create meaningful experiences—not just collect
+                            souvenirs. Her design leadership is inspired by that
+                            same philosophy.
+                          </div>
+                        )
+                      })
+                    }
+                  >
+                    <Img
+                      style={{
+                        width: 100,
+                        height: 100,
+                        borderRadius: '50%'
+                      }}
+                      fluid={
+                        data.janet &&
+                        data.janet.childImageSharp &&
+                        data.janet.childImageSharp.fluid
+                      }
+                      alt={'Janet Covey'}
+                    />
+                    <div
+                      style={{
+                        marginLeft: '1em',
+                        height: '100%',
+                        alignSelf: 'center'
+                      }}
+                    >
+                      Janet Covey
+                    </div>
+                  </div>
+                </Grid>
                 <Grid item xs={12}>
                   <h2>Sponsors</h2>
 
@@ -629,6 +733,12 @@ export const query = graphql`
       ...fluidImageHero
     }
     charles: file(relativePath: { eq: "hackathons/judges/charles.png" }) {
+      ...fluidImageHero
+    }
+    ian: file(relativePath: { eq: "hackathons/judges/ian.jpg" }) {
+      ...fluidImageHero
+    }
+    janet: file(relativePath: { eq: "hackathons/judges/janet.png" }) {
       ...fluidImageHero
     }
     ipad: file(relativePath: { eq: "hackathons/ipad.jpg" }) {
