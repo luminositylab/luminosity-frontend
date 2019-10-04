@@ -288,26 +288,44 @@ const BankOfTheWest = ({ data }) => {
                 <Grid item xs={12} sm={6}>
                   <h3>Friday</h3>
                   <p>
-                    8:00 AM: Check-In/Registration & Breakfast <br />
-                    9:00 AM: Welcome <br />
-                    10:00 AM: Team Formation <br />
-                    10:30 AM: Hacking Begins <br />
-                    12:00 AM: Lunch <br />
-                    1:00 PM: Optional Workshop <br />
-                    4:00 PM: Optional Workshop <br />
-                    6:00 PM: Dinner <br />
-                    8:00 PM: Optional Workshop <br />
-                    10:00 PM: Optional Workshop <br />
+                    8:00a - 8:55a Registration & Breakfast <br />
+                    9:00a - 9:10a Kickoff with John Fleharty, Vice President,
+                    DevOps Engineering at Bank of the West <br />
+                    9:10a - 9:25a Keynote Digital with Hisham Salama, Executive
+                    Vice President, Head of Digital Channels at Bank of the West{' '}
+                    <br />
+                    9:25a - 9:40a Product Design & Guidelines with Janet Covey,
+                    Vice President Senior Product Design Manager at Bank of the
+                    West <br />
+                    9:40a - 10:00a Team Formation & Start of Hackathon <br />
+                    12:00p - 1:00p Bank of the West Recruiting with Elijah
+                    Padua, Recruiting Manager, Vice President at Bank of the
+                    West & Lunch <br />
+                    3:00p - 4:00p Optional Workshop 1 (Mark Naufel "Producing
+                    Mockups with Figma") <br />
+                    4:00p - 5:00p Optional Workshop 2 (Mark Naufel “Front-End
+                    Development with Bootstrap”) <br />
+                    6:00p - 7:00p Dinner <br />
+                    9:00p - 10:00p Optional Workshop 3 (Chase Adams “Intro to
+                    React Web Apps”) <br />
                   </p>
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <h3>Saturday</h3>
                   <p>
-                    8:30 AM: Breakfast <br />
-                    10:00 AM: Project Submission Deadline <br />
-                    10:30 AM: Judging Begins <br />
-                    12:00 PM: Lunch <br />
-                    1:00 PM: Awards & Conclusion (and sleep!) <br />
+                    12:00a - 1:00a Optional Workshop 4 (Chase Adams “Backend
+                    Development with Node.js”) <br />
+                    8:30a - 9:30a Breakfast <br />
+                    10:30a Project Submissions <br />
+                    10:30a - 10:40a Innovation at Bank of the West with John
+                    Fleharty, Vice President, DevOps Engineering at Bank of the
+                    West <br />
+                    10:40a - 11:10a Bank of the West Panel <br />
+                    11:10a - 12:30p Judging <br />
+                    12:30p - 1:30p IT Keynote with Jacob Sorenson, Chief
+                    Information Officer, Executive Vice President Information
+                    Technology Group at Bank of the West & Lunch <br />
+                    1:30p - 2:30p Conclusion & Awards <br />
                   </p>
                 </Grid>
                 <Grid item xs={12}>
