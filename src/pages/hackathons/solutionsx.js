@@ -2,6 +2,7 @@ import React from 'react';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import Grid from '@material-ui/core/Grid';
 import Img from 'gatsby-image';
+import ReactPlayer from 'react-player';
 
 import SEO from '../../components/SEO';
 import Banner from '../../components/Banner';
@@ -63,6 +64,15 @@ const BankOfTheWest = ({ data }) => {
             <div className="description">
               <Grid container spacing={16}>
                 <Grid item xs={12}>
+                  <h2>SolutionsX Hackathon</h2>
+
+                  <ReactPlayer
+                    url="https://www.youtube.com/watch?v=mfOpHqgFF9U"
+                    playing
+                    muted
+                    style={{ margin: '0 auto 30px' }}
+                  />
+
                   <h2>Join Us!</h2>
 
                   <p>
