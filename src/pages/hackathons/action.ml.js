@@ -305,7 +305,7 @@ const BankOfTheWest = ({ data }) => {
                   <h2>Schedule-at-a-Glance (Subject to Change)</h2>
                 </Grid>
                 <Grid item xs={12} sm={6}>
-                  <h3>Friday</h3>
+                  <h3>Saturday</h3>
                   <p>
                     8:00 AM: Check-In/Registration & Breakfast <br />
                     9:00 AM: Welcome <br />
@@ -320,7 +320,7 @@ const BankOfTheWest = ({ data }) => {
                   </p>
                 </Grid>
                 <Grid item xs={12} sm={6}>
-                  <h3>Saturday</h3>
+                  <h3>Sunday</h3>
                   <p>
                     8:30 AM: Breakfast <br />
                     10:00 AM: Project Submission Deadline <br />
