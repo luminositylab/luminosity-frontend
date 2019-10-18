@@ -2,7 +2,6 @@ import React from 'react';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import Grid from '@material-ui/core/Grid';
 import Img from 'gatsby-image';
-import ReactPlayer from 'react-player';
 
 import SEO from '../../components/SEO';
 import Banner from '../../components/Banner';
@@ -38,8 +37,8 @@ const BankOfTheWest = ({ data }) => {
   return (
     <Layout>
       <SEO
-        title="SolutionsX Hackathon"
-        description="SolutionsX Hackathon hosted by Bank of the West in collaboration with ASU's Luminosity Lab."
+        title="Action.ML Hackathon"
+        description="Action.ML Hackathon hosted by Fox in collaboration with ASU's Luminosity Lab."
         // location={location}
       />
 
@@ -64,28 +63,17 @@ const BankOfTheWest = ({ data }) => {
             <div className="description">
               <Grid container spacing={16}>
                 <Grid item xs={12}>
-                  <h2>SolutionsX Hackathon</h2>
-
-                  <ReactPlayer
-                    url="https://www.youtube.com/watch?v=mfOpHqgFF9U"
-                    playing
-                    muted
-                    style={{ margin: '0 auto 30px' }}
-                  />
-
-                  <h2>Join Us!</h2>
-
+                  <h2>Can you hack it?</h2>
                   <p>
-                    This October 4-5th, come take part in a challenge offered by
-                    Bank of the West! An event for innovation and designing,
-                    this unique experience will allow you to call the shots in
-                    your creation. Whether this is your first or fiftieth
-                    hackathon, all ASU students are welcome to participate,
+                    This October 26-27th, come take part in the Action.ML
+                    Hackathon hosted by FOX! As an event centered around
+                    challenge and innovation, you’ll play a pivotal role in
+                    helping conceptualize and create solutions to propel FOX
+                    forward. All ASU students are welcome to participate,
                     collaborate, and learn from each other. Registration is
                     complimentary, and there will be free food, prizes, and
                     swag.
                   </p>
-
                   <div
                     style={{
                       textAlign: 'center',
@@ -94,7 +82,7 @@ const BankOfTheWest = ({ data }) => {
                       marginBottom: '.5em'
                     }}
                   >
-                    <OutboundLink href="https://solutionsxhackathon_bow.eventbrite.com/">
+                    <OutboundLink href="https://actionml-hackathon.eventbrite.com/">
                       Sign up on Eventbrite to compete!
                     </OutboundLink>
                   </div>
@@ -102,19 +90,38 @@ const BankOfTheWest = ({ data }) => {
                   <h2>Challenge Statement</h2>
 
                   <p>
-                    You must be an enrolled Arizona State University student to
-                    participate. Student teams will be given 24 hours of hack
-                    time to design and develop a bank of the future in an effort
-                    to help Bank of the West change banking for good. Student
-                    teams of 2-5 can either be assembled ahead of time or will
-                    be matched at the start of the event. Teams will be required
-                    to use business acumen and technical skills within design
-                    and coding to develop and propose a solution directly to
-                    executives from Bank of the West. By drawing on personal
-                    experience, creativity, and the need to push the envelope,
-                    participants will be able to expand the initial desired
-                    capabilities of a banking platform and create a bank they’d
-                    want to join.
+                    To compete, students should be familiar with or eager to
+                    learn one of the following fields:
+                  </p>
+
+                  <ul>
+                    <li>Machine Learning</li>
+                    <li>Computer Science</li>
+                    <li>Cloud Computing</li>
+                    <li>Business Analytics & Modeling</li>
+                  </ul>
+
+                  <p>
+                    Student teams will be given 24 hours of time to hack within
+                    a 30-hour event to design and develop a machine learning
+                    algorithm that can process high resolution video content.
+                    Student teams of 3-5 can either be assembled ahead of time
+                    or will be matched at the start of the event. Teams will be
+                    given a set of labeled images to train their machine
+                    learning algorithms, with the intent of extracting data
+                    features from the images and using these engineered features
+                    to build a model that can predict and label additional
+                    images with relevant tags. To win the competition, teams
+                    will need to process this video as it streams in nearly
+                    real-time, taking into consideration accuracy and fluid
+                    prediction syncing. Furthermore, the student models will
+                    need to display predicted tags alongside the video in a
+                    novel way which improves the user experience. Students will
+                    have a chance to network with FOX leadership. In addition to
+                    the knowledge acquired by students competing in the
+                    challenge, workshops will be facilitated throughout the
+                    event to teach students the skills necessary to be
+                    competitive.
                   </p>
                 </Grid>
                 <Grid item xs={12}>
@@ -137,28 +144,28 @@ const BankOfTheWest = ({ data }) => {
                   <h3>Do I need to create a team before arriving?</h3>
 
                   <p>
-                    Nope! If you have one, great! If not, we’ve provided time
-                    onsite to form teams before the hack begins.
+                    o Nope! If you have one, great! If not, we’ve provided time
+                    onsite to form teams before the hackathon begins.
                   </p>
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <h3>How many people can a team have?</h3>
 
-                  <p>A team can have between 2 and 5 members.</p>
+                  <p>A team can have between 3 and 5 members.</p>
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <h3>Who can participate?</h3>
                   <p>
                     Any Arizona State University student is welcome to
-                    participate. Whether you’re an undergraduate, masters
-                    student, or Ph.D. candidate, you’re welcome!
+                    participate. Whether you’re an undergraduate, or
+                    graduate-level student, you’re free to come.
                   </p>
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <h3>Should I bring anything?</h3>
                   <p>
                     You’ll want to bring a laptop, or something you can hack on.
-                    You’re not required to stay overnight, but if you are we
+                    You’re not required to stay overnight, but if you are, we
                     recommend at least bringing a toothbrush, toiletries,
                     sleeping bag, and a change of clothes. Don’t forget your
                     student ID for check-in!
@@ -167,15 +174,15 @@ const BankOfTheWest = ({ data }) => {
                 <Grid item xs={12} sm={6}>
                   <h3>How long is the hackathon?</h3>
                   <p>
-                    The hackathon will last 30 hours from start to finish, with
-                    24 hours of allotted hacking.
+                    The hackathon will last 30 hours from start to finish, and
+                    you will have roughly 24 hours of hacking.
                   </p>
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <h3>What about food?</h3>
                   <p>
-                    We’ll provide breakfast, lunch, and dinner on day 1, and
-                    breakfast and lunch on day 2. Snacks will also be on-hand
+                    We’ll provide breakfast, lunch, and dinner on day one, and
+                    breakfast and lunch on day two. Snacks will also be given
                     throughout.
                   </p>
                 </Grid>
@@ -195,12 +202,20 @@ const BankOfTheWest = ({ data }) => {
                 <Grid item xs={12} sm={6}>
                   <h3>Who can register?</h3>
                   <p>
-                    Any ASU student in any degree program and field of study.
+                    Any ASU student. Those that intend to compete should be
+                    familiar or eager to learn with one of the following fields:
+                  </p>
+
+                  <ul>
+                    <li>Machine Learning</li>
+                    <li>Computer Science</li>
+                    <li>Cloud Computing</li>
+                    <li>Business Analytics & Modeling</li>
+                  </ul>
+
+                  <p>
                     All skill levels are welcome, from beginner to advanced. You
-                    each have something to bring to the table! You'll should
-                    have a familiarity or a willingness to learn at least
-                    front-end or back-end web development, computer science,
-                    UI/UX design, or business analytics & modeling.
+                    each have something to bring to the table!
                   </p>
                 </Grid>
                 <Grid item xs={12} sm={6}>
@@ -237,35 +252,31 @@ const BankOfTheWest = ({ data }) => {
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <h3>1st Place</h3>
-
-                  <Prize
-                    title="128GB iPad (Latest)"
-                    image={
-                      data.ipad &&
-                      data.ipad.childImageSharp &&
-                      data.ipad.childImageSharp.fluid
-                    }
-                  />
+                  <p>
+                    Demo and present the winning model at the FOX Data Summit in
+                    February, tour of the FOX lot, travel and accommodations
+                    included.
+                  </p>
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <h3>2nd Place</h3>
                   <Prize
-                    title="Oculus Go"
+                    title="Apple Watch"
                     image={
-                      data.oculus &&
-                      data.oculus.childImageSharp &&
-                      data.oculus.childImageSharp.fluid
+                      data.watch &&
+                      data.watch.childImageSharp &&
+                      data.watch.childImageSharp.fluid
                     }
                   />
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <h3>3rd Place</h3>
                   <Prize
-                    title="Drone"
+                    title="Amazon Fire TV Cube"
                     image={
-                      data.drone &&
-                      data.drone.childImageSharp &&
-                      data.drone.childImageSharp.fluid
+                      data.cube &&
+                      data.cube.childImageSharp &&
+                      data.cube.childImageSharp.fluid
                     }
                   />
                 </Grid>
@@ -277,9 +288,7 @@ const BankOfTheWest = ({ data }) => {
                   <h2>Where Will The Hackathon Take Place?</h2>
 
                   <p>
-                    The hackathon will take place on the first floor of ECG on
-                    ASU's Tempe Campus. See the map below for the exact
-                    location!
+                    The hackathon will take place in the Arizona Ballroom at the MU.
                   </p>
                   <div className="map" style={{ textAlign: 'center' }}>
                     <iframe
@@ -287,7 +296,7 @@ const BankOfTheWest = ({ data }) => {
                       height="450"
                       frameborder="0"
                       style={{ border: 0 }}
-                      src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJDYmAUNwIK4cRR7d4s2RKef8&key=AIzaSyBeXrO61yjuZ8phjJ6sutCmr1citbu6-s8"
+                      src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJCUgLoNwIK4cRWxJrA3jUXFQ&key=AIzaSyBeXrO61yjuZ8phjJ6sutCmr1citbu6-s8"
                       allowfullscreen
                     />
                   </div>
@@ -296,49 +305,32 @@ const BankOfTheWest = ({ data }) => {
                   <h2>Schedule-at-a-Glance (Subject to Change)</h2>
                 </Grid>
                 <Grid item xs={12} sm={6}>
-                  <h3>Friday</h3>
+                  <h3>Saturday</h3>
                   <p>
-                    8:00a - 8:55a Registration & Breakfast <br />
-                    9:00a - 9:10a Kickoff with John Fleharty, Vice President,
-                    DevOps Engineering at Bank of the West <br />
-                    9:10a - 9:25a Keynote Digital with Hisham Salama, Executive
-                    Vice President, Head of Digital Channels at Bank of the West{' '}
-                    <br />
-                    9:25a - 9:40a Product Design & Guidelines with Janet Covey,
-                    Vice President Senior Product Design Manager at Bank of the
-                    West <br />
-                    9:40a - 10:00a Team Formation & Start of Hackathon <br />
-                    12:00p - 1:00p Bank of the West Recruiting with Elijah
-                    Padua, Recruiting Manager, Vice President at Bank of the
-                    West & Lunch <br />
-                    3:00p - 4:00p Optional Workshop 1 (Mark Naufel "Producing
-                    Mockups with Figma") <br />
-                    4:00p - 5:00p Optional Workshop 2 (Mark Naufel “Front-End
-                    Development with Bootstrap”) <br />
-                    6:00p - 7:00p Dinner <br />
-                    9:00p - 10:00p Optional Workshop 3 (Chase Adams “Intro to
-                    React Web Apps”) <br />
+                    8:00 AM: Check-In/Registration & Breakfast <br />
+                    9:00 AM: Welcome <br />
+                    10:00 AM: Team Formation <br />
+                    10:30 AM: Hacking Begins <br />
+                    12:00 PM: Lunch <br />
+                    1:00 PM: Optional Workshop <br />
+                    4:00 PM: Optional Workshop <br />
+                    6:00 PM: Dinner <br />
+                    8:00 PM: Optional Workshop <br />
+                    10:00 PM: Optional Workshop <br />
                   </p>
                 </Grid>
                 <Grid item xs={12} sm={6}>
-                  <h3>Saturday</h3>
+                  <h3>Sunday</h3>
                   <p>
-                    12:00a - 1:00a Optional Workshop 4 (Chase Adams “Backend
-                    Development with Node.js”) <br />
-                    8:30a - 9:30a Breakfast <br />
-                    10:30a Project Submissions <br />
-                    10:30a - 10:40a Innovation at Bank of the West with John
-                    Fleharty, Vice President, DevOps Engineering at Bank of the
-                    West <br />
-                    10:40a - 11:10a Bank of the West Panel <br />
-                    11:10a - 12:30p Judging <br />
-                    12:30p - 1:30p IT Keynote with Jacob Sorenson, Chief
-                    Information Officer, Executive Vice President Information
-                    Technology Group at Bank of the West & Lunch <br />
-                    1:30p - 2:30p Conclusion & Awards <br />
+                    8:30 AM: Breakfast <br />
+                    10:00 AM: Project Submission Deadline <br />
+                    10:30 AM: Judging Begins <br />
+                    12:00 PM: Lunch <br />
+                    1:00 PM: Awards & Conclusion (and sleep!)
+                    <br />
                   </p>
                 </Grid>
-                <Grid item xs={12}>
+                {/* <Grid item xs={12}>
                   <h2>Judges</h2>
                 </Grid>
                 <Grid item xs={12} sm={6}>
@@ -596,125 +588,34 @@ const BankOfTheWest = ({ data }) => {
                       Charles Bang
                     </div>
                   </div>
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                  <div
-                    style={{ display: 'flex', cursor: 'pointer' }}
-                    onClick={() =>
-                      setBio({
-                        title: 'Ian Poinsenet',
-                        description: (
-                          <div>
-                            Ian Poinsenet is Innovation and Transformation
-                            Leader at BNP Paribas International Retail Banking.
-                            Based in Paris (France), his role is to accompany
-                            the branches of the Group in Turkey, Poland,
-                            Ukraine, Africa and the US, building their
-                            innovation programs from ideation to acceleration
-                            and facilitating their transformation initiatives.
-                            <br />
-                            <br />
-                            He has a 25-year experience in Innovation and Change
-                            Management in various industries such as Telco,
-                            Consultancy, Insurnace and Banking. His main focuses
-                            are creativity, sustainability, intrapreneurship,
-                            corporate and employee engagement.
-                          </div>
-                        )
-                      })
-                    }
-                  >
-                    <Img
-                      style={{
-                        width: 100,
-                        height: 100,
-                        borderRadius: '50%'
-                      }}
-                      fluid={
-                        data.ian &&
-                        data.ian.childImageSharp &&
-                        data.ian.childImageSharp.fluid
-                      }
-                      alt={'Ian Poinsenet'}
-                    />
-                    <div
-                      style={{
-                        marginLeft: '1em',
-                        height: '100%',
-                        alignSelf: 'center'
-                      }}
-                    >
-                      Ian Poinsenet
-                    </div>
-                  </div>
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                  <div
-                    style={{ display: 'flex', cursor: 'pointer' }}
-                    onClick={() =>
-                      setBio({
-                        title: 'Janet Covey',
-                        description: (
-                          <div>
-                            As the VP Senior Product Design Manager at Bank of
-                            the West, Covey’s work focuses on ways to simplify,
-                            clarify and streamline the digital customer
-                            experience. She recognizes that individual
-                            experiences don’t look alike, and that the best
-                            design is able to bridge these differences. <br />
-                            <br />
-                            The rise of digital content over the past few
-                            decades has made her more committed than ever to
-                            focusing on diversity when creating customer
-                            experiences. This currently includes working on the
-                            redesign of the bank’s mobile app to meet the needs
-                            of modern consumers. An avid traveler, Janet seeks
-                            to create meaningful experiences—not just collect
-                            souvenirs. Her design leadership is inspired by that
-                            same philosophy.
-                          </div>
-                        )
-                      })
-                    }
-                  >
-                    <Img
-                      style={{
-                        width: 100,
-                        height: 100,
-                        borderRadius: '50%'
-                      }}
-                      fluid={
-                        data.janet &&
-                        data.janet.childImageSharp &&
-                        data.janet.childImageSharp.fluid
-                      }
-                      alt={'Janet Covey'}
-                    />
-                    <div
-                      style={{
-                        marginLeft: '1em',
-                        height: '100%',
-                        alignSelf: 'center'
-                      }}
-                    >
-                      Janet Covey
-                    </div>
-                  </div>
-                </Grid>
+                </Grid> */}
                 <Grid item xs={12}>
                   <h2>Sponsors</h2>
 
                   <Img
                     style={{
-                      width: '50%',
+                      width: 250,
                       margin: '0 auto'
                     }}
                     fluid={
-                      data.bow &&
-                      data.bow.childImageSharp &&
-                      data.bow.childImageSharp.fluid
+                      data.fox &&
+                      data.fox.childImageSharp &&
+                      data.fox.childImageSharp.fluid
                     }
-                    alt={'Bank of the West'}
+                    alt={'Fox'}
+                  />
+
+                  <Img
+                    style={{
+                      width: 250,
+                      margin: '2em auto'
+                    }}
+                    fluid={
+                      data.aws &&
+                      data.aws.childImageSharp &&
+                      data.aws.childImageSharp.fluid
+                    }
+                    alt={'AWS'}
                   />
                 </Grid>
               </Grid>
@@ -727,7 +628,7 @@ const BankOfTheWest = ({ data }) => {
                   marginTop: '.5em'
                 }}
               >
-                <OutboundLink href="https://solutionsxhackathon_bow.eventbrite.com/">
+                <OutboundLink href="https://actionml-hackathon.eventbrite.com/">
                   Sign up now!
                 </OutboundLink>
               </div>
@@ -744,11 +645,11 @@ export default BankOfTheWest;
 export const query = graphql`
   query {
     heroImageIntro: file(
-      relativePath: { eq: "hackathons/solutionsx-hackathon-hero.jpg" }
+      relativePath: { eq: "hackathons/actionml-hackathon.jpg" }
     ) {
       ...fluidImageHero
     }
-    bow: file(relativePath: { eq: "hackathons/bow-logo.jpg" }) {
+    fox: file(relativePath: { eq: "hackathons/fox-logo.png" }) {
       ...fluidImageHero
     }
     jacob: file(relativePath: { eq: "hackathons/judges/jacob.png" }) {
@@ -763,19 +664,13 @@ export const query = graphql`
     charles: file(relativePath: { eq: "hackathons/judges/charles.png" }) {
       ...fluidImageHero
     }
-    ian: file(relativePath: { eq: "hackathons/judges/ian.jpg" }) {
+    watch: file(relativePath: { eq: "hackathons/apple-watch.jpg" }) {
       ...fluidImageHero
     }
-    janet: file(relativePath: { eq: "hackathons/judges/janet.png" }) {
+    cube: file(relativePath: { eq: "hackathons/fire-cube.jpg" }) {
       ...fluidImageHero
     }
-    ipad: file(relativePath: { eq: "hackathons/ipad.jpg" }) {
-      ...fluidImageHero
-    }
-    drone: file(relativePath: { eq: "hackathons/drone.jpg" }) {
-      ...fluidImageHero
-    }
-    oculus: file(relativePath: { eq: "hackathons/oculus.jpg" }) {
+    aws: file(relativePath: { eq: "hackathons/aws.png" }) {
       ...fluidImageHero
     }
   }

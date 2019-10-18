@@ -32,7 +32,7 @@
     visibility: hidden;
     width: 100%;
     z-index: _misc(z-index-base) + 2;
-  
+
     .inner {
       @include vendor(
         'transition',
@@ -79,7 +79,6 @@
       position: relative;
       width: 33.33%;
       cursor: pointer;
-      max-height: 400px;
 
       &:hover {
         > .image {
