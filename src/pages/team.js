@@ -9,64 +9,50 @@ import { leadership, members } from '../content/members';
 
 import teamWorkVideo from '../assets/videos/team-work-blurry.mp4';
 
-class Team extends React.Component {
-  state = {
-    isBioOpen: false,
-    member: {}
-  };
-
-  createHeadshot = member => (
-    <div
-      onClick={this.openBioPage(member)}
-      key={member.name}
-      className="container"
-    >
-      <div className="image">
-        {member.image && (
-          <Img
-            imgStyle={{ objectFit: 'cover' }}
-            fluid={member.image}
-            alt={member.name}
-          />
-        )}
-      </div>
-      <div className="content">
-        <div>
-          <header>
-            <h2>{member.name}</h2>
-          </header>
-          <p>{member.title}</p>
-        </div>
+const createHeadshot = ({ member, onClick }) => (
+  <div
+    onClick={onClick}
+    key={member.name}
+    className="container"
+  >
+    <div className="image">
+      {member.image && (
+        <Img
+          imgStyle={{ objectFit: 'cover' }}
+          fluid={member.image}
+          alt={member.name}
+        />
+      )}
+    </div>
+    <div className="content">
+      <div>
+        <header>
+          <h2>{member.name}</h2>
+        </header>
+        <p>{member.title}</p>
       </div>
     </div>
+  </div>
+);
+
+const Team = ({ data, location }) => {
+  const [bio, setBio] = React.useState(null);
+
+  const mappedPathsToImages = data.headshotImages.edges.reduce(
+    (prev, curr) => ({
+      ...prev,
+      [curr.node.name]: curr.node.childImageSharp.fluid
+    }),
+    {}
   );
 
-  openBioPage = member => () => {
-    this.setState({ isBioOpen: true, member });
-  };
-
-  handleClose = () => {
-    this.setState({ isBioOpen: false });
-  };
-
-  render() {
-    const { data, location } = this.props;
-
-    const mappedPathsToImages = data.headshotImages.edges.reduce(
-      (prev, curr) => ({
-        ...prev,
-        [curr.node.name]: curr.node.childImageSharp.fluid
-      }),
-      {}
-    );
-
-    return (
-      <Layout>
-        <SEO
-          title="The Team"
-          description="The team which composes the Luminosity Lab."
-          location={location}
-        />
+  return (
+    <Layout>
+      <SEO
+        title="The Team"
+        description="The team which composes the Luminosity Lab."
+        location={location}
+      />
 
         <Banner
           title={'The Team'}
