@@ -3,6 +3,7 @@ import Layout from '../components/layout';
 import SEO from '../components/SEO';
 import Banner from '../components/Banner';
 
+
 const About = ({ data }) => (
   <Layout>
     <SEO
@@ -14,10 +15,8 @@ const About = ({ data }) => (
     <Banner
       title={'About Us'}
       // description={'Hosted by Bank of the West'}
-      image={
-        data.heroImageIntro &&
-        data.heroImageIntro.childImageSharp &&
-        data.heroImageIntro.childImageSharp.fluid
+      gl={
+        "about"
       }
     />
 
@@ -65,6 +64,7 @@ const About = ({ data }) => (
 );
 
 export default About;
+
 
 export const query = graphql`
   query {

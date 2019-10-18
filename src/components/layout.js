@@ -7,6 +7,8 @@ import '../assets/scss/main.scss';
 import Header from './Header';
 import Menu from './Menu';
 import Contact from './Contact';
+import Helmet from 'react-helmet';
+
 
 class Layout extends React.Component {
   constructor(props) {
@@ -53,6 +55,7 @@ class Layout extends React.Component {
         </div>
         <Menu onToggleMenu={this.handleToggleMenu} />
       </div>
+      
     );
   }
 }
