@@ -16,7 +16,7 @@ const About = ({ data }) => (
       title={'About Us'}
       // description={'Hosted by Bank of the West'}
       gl={
-        "mark"
+        "about"
       }
     />
 

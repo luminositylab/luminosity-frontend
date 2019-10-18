@@ -19,6 +19,16 @@ class Banner extends React.Component {
       points: 10,
       maxDistance: 20
     })
+
+    // this.effect = window.VANTA.DOTS({
+    //   el: this.myRef.current,
+    //   color: 0xffe100,
+    //   color2: 0xffe20f,
+    //   backgroundColor: 0x0,
+    //   size: 2.60,
+    //   spacing: 29.00
+    // })
+
   }
   componentWillUnmount() {
     if (this.effect) this.effect.destroy()
@@ -50,12 +60,26 @@ class Banner extends React.Component {
     )}
     {this.props.gl && (
        <div style={{height:'922px'}} ref={this.myRef}>
-      {/* <Img
-        style={{ position: 'absolute', width: '100%', height: '100%' }}
-        className="video"
-        fluid={this.props.gl}
-        alt={this.props.title}
-      /> */}
+      </div>
+    )}
+      {this.props.hackathons && (
+       <div style={{height:'922px'}} ref={this.myRef}>
+      </div>
+    )}
+      {this.props.projects && (
+       <div style={{height:'922px'}} ref={this.myRef}>
+      </div>
+    )}
+    {this.props.about && (
+       <div style={{height:'922px'}} ref={this.myRef}>
+      </div>
+    )}
+    {this.props.team && (
+       <div style={{height:'922px'}} ref={this.myRef}>
+      </div>
+    )}
+    {this.props.process && (
+       <div style={{height:'922px'}} ref={this.myRef}>
       </div>
     )}
     <div className="inner">

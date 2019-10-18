@@ -61,7 +61,7 @@ const Projects = ({ data, location }) => {
         description={
           'The Luminosity Lab produces innovations which aim to incite positive change around the globe.'
         }
-        video={mockUpVideo}
+        gl="mark"
         videoStyle={{
           '-webkit-filter': videoBlur,
           '-moz-filter': videoBlur,

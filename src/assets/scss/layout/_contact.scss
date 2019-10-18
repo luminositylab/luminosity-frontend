@@ -6,6 +6,107 @@
 
 /* Contact */
 
+#mega-footer {
+    background: #353535;
+    background-size: cover;
+    color: #EDEDED;
+    padding: 30px 0 83px;
+    position: relative;
+    padding-bottom: 40px;
+    font-weight: 200;
+    font-size: 16px;
+}
+.container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.container:before,
+.container:after {
+    content: " ";
+    display: table;
+}
+#mega-footer h1 {
+     color: #EDEDED;
+     font-size: 18px;
+     font-weight: 500;
+     line-height: 21px;
+    margin-bottom: 4px;
+ }
+#mega-footer #address-footer p,
+#mega-footer .phone{
+    color: #EDEDED;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+#mega-footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-size: 18px;
+    font-weight: normal;
+}
+#mega-footer .row {
+    // max-width: 1270px;
+}
+#mega-footer ul.social-media {
+    width: auto;
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: normal;
+}
+#mega-footer ul.social-media li{
+    float: left;
+    position: relative;
+    display: block;
+}
+#mega-footer ul.social-media li i{
+    color: #EDEDED;
+    font-size: 40px;
+    margin-right: 10px;
+}
+#mega-footer ul.footer_menu {
+    border-top: 1px solid #CACACA;
+    padding-top: 20px;
+}
+#mega-footer ul.footer_menu li {
+    margin-bottom: 13px;
+}
+#mega-footer ul.footer_menu a {
+    font-weight:300;
+}
+#mega-footer .footer-center .footer-wrap {
+    max-width: 280px;
+    margin-left: 11%;
+    padding-top: 20px;
+    border-top: 1px solid #CACACA;
+}
+#mega-footer ul.menu.nav li a:hover{
+    opacity: 0.5;
+}
+#mega-footer a:link,
+#mega-footer a:visited,
+#mega-footer a:hover
+{
+    color: #EDEDED;
+    text-decoration: none;
+}
+
+@media(max-width: 991px) {
+    #mega-footer .footer-center .footer-wrap {
+        max-width: 100%;
+        margin-left: 0;
+    }
+    #mega-footer .footer-center {
+        margin-bottom: 40px;
+    }
+}
+
 	#contact {
 		border-bottom: solid 1px _palette(border);
 		overflow-x: hidden;

@@ -1,88 +1,38 @@
 import React from 'react';
 import { HomeRounded, PhoneRounded, MailRounded } from '@material-ui/icons';
 import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import ked from '../assets/images/ked.png';
+import innov from '../assets/images/innov.png';
 
 const Contact = props => (
-  <section id="contact">
-    <div className="inner">
-      <section>
-        <div className="inner">
-          <ul className="icons">
-            <li>
-              <a href="https://twitter.com/luminositylab" className="icon alt">
-                <FaTwitter />
-                <span className="label">Twitter</span>
-              </a>
-            </li>
-            {/*<li>
-          <a href="#" className="icon alt fa-facebook">
-            <span className="label">Facebook</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" className="icon alt fa-instagram">
-            <span className="label">Instagram</span>
-          </a>
-        </li> */}
-            <li>
-              <a href="https://github.com/luminositylab" className="icon alt">
-                <FaGithub />
-                <span className="label">GitHub</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/company/the-luminosity-lab"
-                className="icon alt"
-              >
-                <FaLinkedin />
-                <span className="label">LinkedIn</span>
-              </a>
-            </li>
-          </ul>
-          <ul className="copyright">
-            <li>&copy; {new Date().getFullYear()} The Luminosity Lab</li>
-          </ul>
-        </div>
-      </section>
-      <section className="split">
-        <section>
-          <a href="mailto:luminosity@asu.edu">
-            <div className="contact-method">
-              <span className="icon alt">
-                <MailRounded />
-              </span>
-              luminosity@asu.edu
+<section id="block-rtdfooter" class="block block-rtd-footer clearfix">
+    <div id="mega-footer">
+        <div class="container">
+            <div class="grid-wrapper">
+                <div class="col-4" style={{marginLeft: 20}}>
+                 
+                        <img alt="Office of Knowledge Enterprise Development" src={ked} height="100"/>
+                
+                    <div id="address-footer" style={{marginLeft: 20}}>
+                        <p>
+                            The Luminosity Lab<br />
+                            300 E University Drive<br />
+                            Suite 110<br />
+                            Tempe, AZ 85287-7205
+                        </p>
+                        <p>Phone: (480) 965-1225 | Fax: (480) 965-8293</p>
+                    </div>
+                    <ul class="social-media"></ul>
+                </div>
+                <div class="col-8" style={{marginLeft: 330, marginTop: 100}}>
+                <img src={innov} height="100"/>
+                    <div class="footer-wrap">
+                    </div>
+                </div>
             </div>
-          </a>
-        </section>
-        <section>
-          <div className="contact-method">
-            <a href="tel:8552785080">
-              <span className="icon alt">
-                <PhoneRounded />
-              </span>
-              (855) 278 5080
-            </a>
-          </div>
-        </section>
-        <section>
-          <div className="contact-method">
-            <a href="https://goo.gl/maps/GWM6ghoZZt62">
-              <span className="icon alt">
-                <HomeRounded />
-              </span>
-              300 E University Dr
-              <br />
-              Tempe, AZ 85281
-              <br />
-              United States of America
-            </a>
-          </div>
-        </section>
-      </section>
+        </div>
     </div>
-  </section>
+</section>
 );
 
 export default Contact;

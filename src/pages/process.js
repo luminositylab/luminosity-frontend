@@ -18,17 +18,7 @@ const Process = () => (
 
     <Banner
       title={'Our Process'}
-      description={
-        'Our team utilizes a systems engineering approach to project planning and design, and drives projects forward with an Agile methodology that allows us to quickly adapt to change.'
-      }
-      video={mockUpVideo}
-      videoStyle={{
-        '-webkit-filter': videoBlur,
-        '-moz-filter': videoBlur,
-        '-o-filter': videoBlur,
-        '-ms-filter': videoBlur,
-        filter: videoBlur
-      }}
+      process='process'
     />
 
     <div id="main">
@@ -38,6 +28,8 @@ const Process = () => (
           <div className="image center">
             <img src={ideation} />
           </div>
+          <br></br>
+          <br></br>
           <p>
             Ideation is the most critical driving component of our operation.
             Luminosity’s brainstorming sessions involve creativity, abstraction,
@@ -70,6 +62,8 @@ const Process = () => (
           <div className="image center">
             <img src={design} />
           </div>
+          <br></br>
+          <br></br>
           <h3>Implementation</h3>
           <p>
             All projects are managed with a proven Agile approach. We utilize
