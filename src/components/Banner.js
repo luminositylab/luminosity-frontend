@@ -1,6 +1,6 @@
 import React from 'react';
 import Img from 'gatsby-image';
-// import Helmet from 'react-helmet';
+import Helmet from 'react-helmet';
 
 
 class Banner extends React.Component {
@@ -38,7 +38,12 @@ class Banner extends React.Component {
     return (
     
       
+
   <section id="banner" className={this.props.title ? 'minor' : 'major fit'}>
+    <Helmet>
+      <script  src="https://cdn.jsdelivr.net/gh/tengbao/vanta/vendor/three.r92.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/tengbao/vanta/dist/vanta.net.min.js"></script>
+      </Helmet>
     {this.props.video && (
       <video
         className="video"
