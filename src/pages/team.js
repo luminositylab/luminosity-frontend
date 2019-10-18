@@ -52,6 +52,22 @@ class Team extends React.Component {
   render() {
     const { data, location } = this.props;
 
+    const mappedPathsToImages = data.headshotImages.edges.reduce(
+      (prev, curr) => ({
+        ...prev,
+        [curr.node.name]: curr.node.childImageSharp.fluid
+      }),
+      {}
+    );
+
+    return (
+      <Layout>
+        <SEO
+          title="The Team"
+          description="The team which composes the Luminosity Lab."
+          location={location}
+        />
+
         <Banner
           title={'The Team'}
           description={
