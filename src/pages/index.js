@@ -39,8 +39,8 @@ class HomeIndex extends React.Component {
     return (
       <Layout>
         <SEO
-          title="Luminosity | Beginning the Future."
-          description="Luminosity | Beginning the Future."
+          title="Luminosity | Inspiring the Future."
+          description="Luminosity | Inspiring the Future."
           location={this.props.location}
         />
         <Helmet>

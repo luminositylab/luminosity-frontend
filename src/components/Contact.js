@@ -20,7 +20,7 @@ const Contact = props => (
                             Suite 110<br />
                             Tempe, AZ 85287-7205
                         </p>
-                        <p>Phone: (480) 965-1225 | Fax: (480) 965-8293</p>
+                        <p>Email: luminosity@asu.edu</p>
                     </div>
                     <ul class="social-media"></ul>
                 </div>
