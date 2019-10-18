@@ -54,63 +54,55 @@ const Team = ({ data, location }) => {
         location={location}
       />
 
-      <Banner
-        title={'The Team'}
-        description={
-          'We are made up of brilliant people from around the world.'
-        }
-        video={teamWorkVideo}
-      />
+        <Banner
+          title={'The Team'}
+          description={
+            'Luminosity is comprised of an interdisciplinary team of problem-solvers.'
+          }
+          gl={
+            "about"
+          }
+          // video={teamWorkVideo}
+        />
 
-      <BioModal
-        open={Boolean(bio)}
-        title={bio && bio.title}
-        description={bio && bio.description}
-        handleClose={() => setBio(null)}
-      />
-
-      <div id="main">
-        <section id="one" className="headshots">
-          <div className="title">Leadership</div>
-          <div className="members">
-            {leadership.map(e =>
-              createHeadshot({
-                member: {
+        <div id="main">
+          <section id="one" className="headshots">
+            <BioModal {...this.state} handleClose={this.handleClose} />
+            <br></br>
+            <div className="title">Leadership</div>
+            <br></br>
+            <div className="members">
+              {leadership.map(e =>
+                this.createHeadshot({
                   ...e,
                   image: mappedPathsToImages[e.path]
-                },
-                onClick: () =>
-                  setBio({
-                    title: e.name,
-                    description: e.description
-                  })
-              })
-            )}
-          </div>
-        </section>
-        <section id="two" className="headshots">
-          <div className="title">Students</div>
-          <div className="members">
-            {members.map(e =>
-              createHeadshot({
-                member: {
+                })
+              )}
+            </div>
+          </section>
+          <section id="two" className="headshots">
+          <br></br>
+            <div className="title">Students</div>
+            <br></br>
+            <div className="members">
+              {members.map(e =>
+                this.createHeadshot({
                   ...e,
                   image: mappedPathsToImages[e.path]
-                },
-                onClick: () =>
-                  setBio({
-                    title: e.name,
-                    description: e.description
-                  })
-              })
-            )}
-          </div>
-          <div className="subtitle">...and many more!</div>
-        </section>
-      </div>
-    </Layout>
-  );
-};
+                })
+              )}
+            </div>
+            <br></br>
+            <div className="subtitle"> - and many more - </div>
+            <br></br>
+            <br></br>
+            <br></br>
+          </section>
+        </div>
+      </Layout>
+    );
+  }
+}
 
 export default Team;
 
