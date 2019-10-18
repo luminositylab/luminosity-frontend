@@ -37,6 +37,7 @@ class Banner extends React.Component {
   render() {
     return (
     
+      
   <section id="banner" className={this.props.title ? 'minor' : 'major fit'}>
     {this.props.video && (
       <video

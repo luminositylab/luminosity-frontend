@@ -71,15 +71,20 @@ class Team extends React.Component {
         <Banner
           title={'The Team'}
           description={
-            'We are made up of brilliant people from around the world.'
+            'Luminosity is comprised of an interdisciplinary team of problem-solvers.'
           }
-          video={teamWorkVideo}
+          gl={
+            "about"
+          }
+          // video={teamWorkVideo}
         />
 
         <div id="main">
           <section id="one" className="headshots">
             <BioModal {...this.state} handleClose={this.handleClose} />
+            <br></br>
             <div className="title">Leadership</div>
+            <br></br>
             <div className="members">
               {leadership.map(e =>
                 this.createHeadshot({
@@ -90,7 +95,9 @@ class Team extends React.Component {
             </div>
           </section>
           <section id="two" className="headshots">
+          <br></br>
             <div className="title">Students</div>
+            <br></br>
             <div className="members">
               {members.map(e =>
                 this.createHeadshot({
@@ -99,7 +106,11 @@ class Team extends React.Component {
                 })
               )}
             </div>
-            <div className="subtitle">...and many more!</div>
+            <br></br>
+            <div className="subtitle"> - and many more - </div>
+            <br></br>
+            <br></br>
+            <br></br>
           </section>
         </div>
       </Layout>

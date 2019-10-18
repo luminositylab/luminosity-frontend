@@ -60,14 +60,17 @@ const Hackathons = ({ data, location }) => {
         description={
           'Luminosity Lab hosts a variety of hackathons to engage the local community and develop interest in growing fields.'
         }
-        video={heroVideo}
-        videoStyle={{
-          '-webkit-filter': videoBlur,
-          '-moz-filter': videoBlur,
-          '-o-filter': videoBlur,
-          '-ms-filter': videoBlur,
-          filter: videoBlur
-        }}
+        gl={
+          "about"
+        }
+        // video={heroVideo}
+        // videoStyle={{
+        //   '-webkit-filter': videoBlur,
+        //   '-moz-filter': videoBlur,
+        //   '-o-filter': videoBlur,
+        //   '-ms-filter': videoBlur,
+        //   filter: videoBlur
+        // }}
       />
 
       <div id="main">
@@ -80,6 +83,9 @@ const Hackathons = ({ data, location }) => {
           )}
         </section>
       </div>
+      <br></br>
+      <br></br>
+      <br></br>
     </Layout>
   );
 };
