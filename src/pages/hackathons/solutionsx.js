@@ -5,7 +5,7 @@ import Img from 'gatsby-image';
 import ReactPlayer from 'react-player';
 
 import SEO from '../../components/SEO';
-import Banner from '../../components/Banner';
+import ImgBanner from '../../components/ImgBanner';
 import BioModal from '../../components/BioModal';
 import Layout from '../../components/layout';
 
@@ -43,7 +43,7 @@ const BankOfTheWest = ({ data }) => {
         // location={location}
       />
 
-      <Banner
+      <ImgBanner
         image={
           data.heroImageIntro &&
           data.heroImageIntro.childImageSharp &&

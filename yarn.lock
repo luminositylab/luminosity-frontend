@@ -8076,6 +8076,11 @@ load-json-file@^4.0.0:
     pify "^3.0.0"
     strip-bom "^3.0.0"
 
+load-script@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/load-script/-/load-script-1.0.0.tgz#0491939e0bee5643ee494a7e3da3d2bac70c6ca4"
+  integrity sha1-BJGTngvuVkPuSUp+PaPSuscMbKQ=
+
 loader-fs-cache@^1.0.0, loader-fs-cache@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/loader-fs-cache/-/loader-fs-cache-1.0.2.tgz#54cedf6b727e1779fd8f01205f05f6e88706f086"
@@ -10781,16 +10786,10 @@ react-lifecycles-compat@^3.0.2, react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
-
 react-load-script@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/react-load-script/-/react-load-script-0.0.6.tgz#db6851236aaa25bb622677a2eb51dad4f8d2c258"
   integrity sha512-aRGxDGP9VoLxcsaYvKWIW+LRrMOzz2eEcubTS4NvQPPugjk2VvMhow0wWTkSl7RxookomD1MwcP4l5UStg5ShQ==
-
-react-pure-lifecycle@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/react-pure-lifecycle/-/react-pure-lifecycle-3.0.0.tgz#8077c7294904c7f85124a976c09ddec96bc119aa"
-  integrity sha512-jERjJ/SxA2ErtYOlwSV3AzdEU3zAs4g0UTL3zJp7X29fV71gKJEKVV36WkMc0Jeh7xIT5Z1Incam+auon5SElA==
 
 react-player@^1.13.0:
   version "1.13.0"
@@ -10800,6 +10799,11 @@ react-player@^1.13.0:
     deepmerge "^4.0.0"
     load-script "^1.0.0"
     prop-types "^15.7.2"
+
+react-pure-lifecycle@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/react-pure-lifecycle/-/react-pure-lifecycle-3.0.0.tgz#8077c7294904c7f85124a976c09ddec96bc119aa"
+  integrity sha512-jERjJ/SxA2ErtYOlwSV3AzdEU3zAs4g0UTL3zJp7X29fV71gKJEKVV36WkMc0Jeh7xIT5Z1Incam+auon5SElA==
 
 react-reconciler@^0.20.0:
   version "0.20.4"

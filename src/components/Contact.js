@@ -24,7 +24,7 @@ const Contact = props => (
                     </div>
                     <ul class="social-media"></ul>
                 </div>
-                <div class="col-8" style={{marginLeft: 330, marginTop: 100}}>
+                <div class="numOne col-8" style={{marginLeft: 330, marginTop: 100}}>
                 <img src={innov} height="100"/>
                     <div class="footer-wrap">
                     </div>

@@ -25,9 +25,9 @@
     "react-helmet": "^5.2.0",
     "react-icons": "^3.2.2",
     "react-load-script": "^0.0.6",
+    "react-player": "^1.13.0",
     "react-pure-lifecycle": "^3.0.0",
     "three": "^0.92.0",
-    "react-player": "^1.13.0",
     "typeface-carrois-gothic-sc": "^0.0.72",
     "typeface-roboto": "^0.0.75"
   },

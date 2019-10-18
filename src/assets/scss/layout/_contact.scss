@@ -6,6 +6,12 @@
 
 /* Contact */
 
+@media only screen and (max-width: 1200px) {
+	.numOne {
+	  display: none;
+	}
+  }
+
 #mega-footer {
     background: #353535;
     background-size: cover;

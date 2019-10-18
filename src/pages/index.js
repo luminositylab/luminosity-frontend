@@ -26,8 +26,8 @@ class HomeIndex extends React.Component {
       el: this.myRef.current,
       color: 0xffffff,
       backgroundColor: 0x000000,
-      points: 10,
-      maxDistance: 20
+      points: 5,
+      maxDistance: 15
     })
   }
   componentWillUnmount() {

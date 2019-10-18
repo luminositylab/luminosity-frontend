@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import Img from 'gatsby-image';
 
 import SEO from '../../components/SEO';
-import Banner from '../../components/Banner';
+import ImgBanner from '../../components/ImgBanner';
 import BioModal from '../../components/BioModal';
 import Layout from '../../components/layout';
 
@@ -42,7 +42,7 @@ const BankOfTheWest = ({ data }) => {
         // location={location}
       />
 
-      <Banner
+      <ImgBanner
         image={
           data.heroImageIntro &&
           data.heroImageIntro.childImageSharp &&
@@ -87,6 +87,7 @@ const BankOfTheWest = ({ data }) => {
                     </OutboundLink>
                   </div>
 
+                    <br></br>
                   <h2>Challenge Statement</h2>
 
                   <p>
@@ -285,6 +286,7 @@ const BankOfTheWest = ({ data }) => {
                   <p>Additional swag will be given out on-site!</p>
                 </Grid>
                 <Grid item xs={12}>
+                <br></br>
                   <h2>Where Will The Hackathon Take Place?</h2>
 
                   <p>
@@ -302,6 +304,7 @@ const BankOfTheWest = ({ data }) => {
                   </div>
                 </Grid>
                 <Grid item xs={12}>
+                <br></br>
                   <h2>Schedule-at-a-Glance (Subject to Change)</h2>
                 </Grid>
                 <Grid item xs={12} sm={6}>
@@ -590,6 +593,7 @@ const BankOfTheWest = ({ data }) => {
                   </div>
                 </Grid> */}
                 <Grid item xs={12}>
+                <br></br>
                   <h2>Sponsors</h2>
 
                   <Img
