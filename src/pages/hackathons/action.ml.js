@@ -87,7 +87,7 @@ const BankOfTheWest = ({ data }) => {
                     </OutboundLink>
                   </div>
 
-                    <br></br>
+                  <br></br>
                   <h2>Challenge Statement</h2>
 
                   <p>
@@ -286,11 +286,12 @@ const BankOfTheWest = ({ data }) => {
                   <p>Additional swag will be given out on-site!</p>
                 </Grid>
                 <Grid item xs={12}>
-                <br></br>
+                  <br></br>
                   <h2>Where Will The Hackathon Take Place?</h2>
 
                   <p>
-                    The hackathon will take place in the Arizona Ballroom at the MU.
+                    The hackathon will take place in the Arizona Ballroom at the
+                    MU.
                   </p>
                   <div className="map" style={{ textAlign: 'center' }}>
                     <iframe
@@ -304,32 +305,47 @@ const BankOfTheWest = ({ data }) => {
                   </div>
                 </Grid>
                 <Grid item xs={12}>
-                <br></br>
+                  <br></br>
                   <h2>Schedule-at-a-Glance (Subject to Change)</h2>
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <h3>Saturday</h3>
                   <p>
-                    8:00 AM: Check-In/Registration & Breakfast <br />
-                    9:00 AM: Welcome <br />
-                    10:00 AM: Team Formation <br />
-                    10:30 AM: Hacking Begins <br />
-                    12:00 PM: Lunch <br />
-                    1:00 PM: Optional Workshop <br />
-                    4:00 PM: Optional Workshop <br />
-                    6:00 PM: Dinner <br />
-                    8:00 PM: Optional Workshop <br />
-                    10:00 PM: Optional Workshop <br />
+                    8:00a – 8:55a Check-In & Breakfast <br />
+                    9:00a – 9:45a Welcome to Action.ML! Keynote by Tim Joyce &
+                    Sarath Ramaswami of FOX
+                    <br />
+                    9:45a – 10:00a Competition Guidelines & Event Overview
+                    <br />
+                    10:00a Team Formation & Hacking Begins!
+                    <br />
+                    12:00p – 12:45p Lunch
+                    <br />
+                    6:00p – 6:45p Dinner
+                    <br />
+                    6:30p – 7:30p Optional Workshop #1
+                    <br />
+                    7:30p – 8:30p Optional Workshop #2
+                    <br />
+                    9:00p – 10:00p Optional Workshop #3
+                    <br />
+                    11:00p – 12:00a Optional Workshop #4
+                    <br />
                   </p>
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <h3>Sunday</h3>
                   <p>
-                    8:30 AM: Breakfast <br />
-                    10:00 AM: Project Submission Deadline <br />
-                    10:30 AM: Judging Begins <br />
-                    12:00 PM: Lunch <br />
-                    1:00 PM: Awards & Conclusion (and sleep!)
+                    8:30a – 9:15a Breakfast <br />
+                    10:30a Project Submission Deadline
+                    <br />
+                    10:30a – 11:00a Q&A with FOX
+                    <br />
+                    11:00a – 1:00p Pitch Presentations to Judges & Participants
+                    <br />
+                    1:00p – 2:00p Lunch
+                    <br />
+                    2:00p – 2:30p Awards & Conclusion
                     <br />
                   </p>
                 </Grid>
@@ -593,7 +609,7 @@ const BankOfTheWest = ({ data }) => {
                   </div>
                 </Grid> */}
                 <Grid item xs={12}>
-                <br></br>
+                  <br></br>
                   <h2>Sponsors</h2>
 
                   <Img
