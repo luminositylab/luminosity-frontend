@@ -2,6 +2,7 @@ import React from 'react';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import Grid from '@material-ui/core/Grid';
 import Img from 'gatsby-image';
+import ReactPlayer from 'react-player';
 
 import SEO from '../../components/SEO';
 import ImgBanner from '../../components/ImgBanner';
