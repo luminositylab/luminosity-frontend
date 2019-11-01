@@ -63,6 +63,14 @@ const BankOfTheWest = ({ data }) => {
             <div className="description">
               <Grid container spacing={16}>
                 <Grid item xs={12}>
+                  <h2>Action.ML Hackathon</h2>
+
+                  <ReactPlayer
+                    url="https://www.youtube.com/watch?v=io66H2KQHlE"
+                    playing
+                    muted
+                    style={{ margin: '0 auto 30px' }}
+                  />
                   <h2>Can you hack it?</h2>
                   <p>
                     This October 26-27th, come take part in the Action.ML
