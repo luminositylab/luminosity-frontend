@@ -6,34 +6,27 @@ import Banner from '../components/Banner';
 import SEO from '../components/SEO';
 import Helmet from 'react-helmet';
 
-
-// import * as THREE from '../../static/js/three.min.js'
-// import * as THREE from 'three';
-// import NET from '../../static/js/vanta.net.min.js'
-// import Script from 'react-load-script'
-
-
 class HomeIndex extends React.Component {
   constructor(props) {
     super(props);
 
-    this.myRef = React.createRef()
+    this.myRef = React.createRef();
   }
 
   componentDidMount() {
-    
-    this.effect = window.VANTA.NET({
-      el: this.myRef.current,
-      color: 0xffffff,
-      backgroundColor: 0x000000,
-      points: 9,
-      maxDistance: 18
-    })
+    if (window && window.VANTA) {
+      this.effect = window.VANTA.NET({
+        el: this.myRef.current,
+        color: 0xffffff,
+        backgroundColor: 0x000000,
+        points: 9,
+        maxDistance: 18
+      });
+    }
   }
   componentWillUnmount() {
-    if (this.effect) this.effect.destroy()
+    if (this.effect) this.effect.destroy();
   }
-
 
   render() {
     return (
@@ -43,29 +36,28 @@ class HomeIndex extends React.Component {
           description="Luminosity | Inspiring the Future."
           location={this.props.location}
         />
-        <Helmet>
-        <script  src="https://cdn.jsdelivr.net/gh/tengbao/vanta/vendor/three.r92.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/tengbao/vanta/dist/vanta.net.min.js"></script>
-        </Helmet>
-        <div style={{height:'922px'}} ref={this.myRef}>
-     <section id="banner" className={'banner' ? 'minor' : 'major fit'}>
-         <div className="inner">
-        <header className="major">
-          {/* <h1 style={{ textAlign: 'right' }}></h1> */}
-        </header>
-      <p style={{ float: 'right' }}>{ <React.Fragment>
-              Luminosity is an interdisciplinary research and development lab
-              driven by a hand-selected team of high-performing students from
-              Arizona State University. <br />
-              <br />
-              We design, build, and deploy novel solutions to address some of
-              the world’s most pressing challenges.
-            </React.Fragment>}</p>
-    </div>
-        </section>
+        <div style={{ height: '922px' }} ref={this.myRef}>
+          <section id="banner" className={'banner' ? 'minor' : 'major fit'}>
+            <div className="inner">
+              <header className="major">
+                {/* <h1 style={{ textAlign: 'right' }}></h1> */}
+              </header>
+              <p style={{ float: 'right' }}>
+                {
+                  <React.Fragment>
+                    Luminosity is an interdisciplinary research and development
+                    lab driven by a hand-selected team of high-performing
+                    students from Arizona State University. <br />
+                    <br />
+                    We design, build, and deploy novel solutions to address some
+                    of the world’s most pressing challenges.
+                  </React.Fragment>
+                }
+              </p>
+            </div>
+          </section>
         </div>
 
-        
         <div id="main">
           <section id="one" className="tiles">
             <article>

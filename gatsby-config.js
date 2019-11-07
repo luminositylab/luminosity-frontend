@@ -10,7 +10,6 @@ module.exports = {
     description: config.siteDescription
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
     'gatsby-plugin-robots-txt',
     'gatsby-plugin-sitemap',
     {
@@ -54,7 +53,7 @@ module.exports = {
       options: {
         trackingId: config.googleAnalyticsId
       }
-    }
-    // 'gatsby-plugin-offline'
+    },
+    'gatsby-plugin-react-helmet'
   ]
 };
