@@ -360,7 +360,9 @@ const Emergentech = ({ data }) => {
                 <Grid item xs={6}>
                   <Img
                     style={{
-                      width: 200,
+                      marginTop: 10,
+                      width: '50%',
+                      maxWidth: 150,
                       margin: '0 auto'
                     }}
                     fluid={
@@ -374,15 +376,15 @@ const Emergentech = ({ data }) => {
                 <Grid item xs={6}>
                   <Img
                     style={{
-                      width: 150,
+                      width: '50%',
                       margin: '0 auto'
                     }}
                     fluid={
-                      data.starbucks &&
-                      data.starbucks.childImageSharp &&
-                      data.starbucks.childImageSharp.fluid
+                      data.ked &&
+                      data.ked.childImageSharp &&
+                      data.ked.childImageSharp.fluid
                     }
-                    alt={'Starbucks'}
+                    alt={'ASU KED'}
                   />
                 </Grid>
               </Grid>
@@ -422,7 +424,7 @@ export const query = graphql`
     aws: file(relativePath: { eq: "hackathons/aws.png" }) {
       ...fluidImageHero
     }
-    starbucks: file(relativePath: { eq: "hackathons/starbucks.png" }) {
+    ked: file(relativePath: { eq: "hackathons/asu-ked.png" }) {
       ...fluidImageHero
     }
     bow: file(relativePath: { eq: "hackathons/bow-logo.jpg" }) {
