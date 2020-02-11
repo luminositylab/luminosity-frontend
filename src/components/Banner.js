@@ -47,7 +47,10 @@ class Banner extends React.Component {
           />
         )}
         {this.props.vantaNet && (
-          <div style={{ height: '922px' }} ref={this.vantaRef}></div>
+          <div
+            style={{ position: 'absolute', height: '922px', width: '100%' }}
+            ref={this.vantaRef}
+          ></div>
         )}
         <div className="inner">
           {this.props.title && (
