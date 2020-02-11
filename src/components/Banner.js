@@ -5,13 +5,13 @@ class Banner extends React.Component {
   constructor(props) {
     super(props);
 
-    this.myRef = React.createRef();
+    this.vantaRef = React.createRef();
   }
 
   componentDidMount() {
-    if (window && window.VANTA) {
+    if (window && window.VANTA && window.VANTA.NET) {
       this.effect = window.VANTA.NET({
-        el: this.myRef.current,
+        el: this.vantaRef.current,
         color: 0xffffff,
         backgroundColor: 0x000000,
         points: 10,
@@ -46,23 +46,8 @@ class Banner extends React.Component {
             alt={this.props.title}
           />
         )}
-        {this.props.gl && (
-          <div style={{ height: '922px' }} ref={this.myRef}></div>
-        )}
-        {this.props.hackathons && (
-          <div style={{ height: '922px' }} ref={this.myRef}></div>
-        )}
-        {this.props.projects && (
-          <div style={{ height: '922px' }} ref={this.myRef}></div>
-        )}
-        {this.props.about && (
-          <div style={{ height: '922px' }} ref={this.myRef}></div>
-        )}
-        {this.props.team && (
-          <div style={{ height: '922px' }} ref={this.myRef}></div>
-        )}
-        {this.props.process && (
-          <div style={{ height: '922px' }} ref={this.myRef}></div>
+        {this.props.vantaNet && (
+          <div style={{ height: '922px' }} ref={this.vantaRef}></div>
         )}
         <div className="inner">
           {this.props.title && (

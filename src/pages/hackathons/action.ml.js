@@ -154,7 +154,7 @@ const BankOfTheWest = ({ data }) => {
                   <h3>Do I need to create a team before arriving?</h3>
 
                   <p>
-                    o Nope! If you have one, great! If not, we’ve provided time
+                    Nope! If you have one, great! If not, we’ve provided time
                     onsite to form teams before the hackathon begins.
                   </p>
                 </Grid>

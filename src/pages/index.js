@@ -2,9 +2,7 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import Layout from '../components/layout';
-import Banner from '../components/Banner';
 import SEO from '../components/SEO';
-import Helmet from 'react-helmet';
 
 class HomeIndex extends React.Component {
   constructor(props) {
@@ -14,7 +12,7 @@ class HomeIndex extends React.Component {
   }
 
   componentDidMount() {
-    if (window && window.VANTA) {
+    if (window && window.VANTA && window.VANTA.NET) {
       this.effect = window.VANTA.NET({
         el: this.myRef.current,
         color: 0xffffff,

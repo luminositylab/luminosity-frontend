@@ -14,10 +14,7 @@ const About = ({ data }) => (
 
     <Banner
       title={'About Us'}
-      // description={'Hosted by Bank of the West'}
-      gl={
-        "about"
-      }
+      vantaNet={true}
     />
 
     <div id="main" className="alt">

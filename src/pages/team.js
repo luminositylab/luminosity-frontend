@@ -7,8 +7,6 @@ import Layout from '../components/layout';
 import Banner from '../components/Banner';
 import { leadership, members } from '../content/members';
 
-import teamWorkVideo from '../assets/videos/team-work-blurry.mp4';
-
 class Team extends React.Component {
   state = {
     isBioOpen: false,
@@ -73,10 +71,7 @@ class Team extends React.Component {
           description={
             'Luminosity is comprised of an interdisciplinary team of problem-solvers.'
           }
-          gl={
-            "about"
-          }
-          // video={teamWorkVideo}
+          vantaNet={true}
         />
 
         <div id="main">

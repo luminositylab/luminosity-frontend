@@ -9,6 +9,10 @@ const hackathons = [
   {
     title: 'SolutionsX',
     description: 'Hosted by Bank of the West.'
+  },
+  {
+    title: 'Emergentech',
+    description: 'Hosted by The Luminosity Lab.'
   }
 ];
 

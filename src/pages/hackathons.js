@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import SEO from '../components/SEO';
-import Layout from '../components/layout';
-import Banner from '../components/Banner';
-import heroVideo from '../assets/videos/typing-keyboard.mp4';
+import SEO from '../components/SEO'
+import Layout from '../components/layout'
+import Banner from '../components/Banner'
 import hackathons from '../content/hackathons';
 
 const createSection = ({ title, path, description, info, image, video }) => (
@@ -60,17 +59,7 @@ const Hackathons = ({ data, location }) => {
         description={
           'Luminosity Lab hosts a variety of hackathons to engage the local community and develop interest in growing fields.'
         }
-        gl={
-          "about"
-        }
-        // video={heroVideo}
-        // videoStyle={{
-        //   '-webkit-filter': videoBlur,
-        //   '-moz-filter': videoBlur,
-        //   '-o-filter': videoBlur,
-        //   '-ms-filter': videoBlur,
-        //   filter: videoBlur
-        // }}
+        vantaNet={true}
       />
 
       <div id="main">

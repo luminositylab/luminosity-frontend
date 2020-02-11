@@ -18,7 +18,7 @@ const Process = () => (
 
     <Banner
       title={'Our Process'}
-      process='process'
+      vantaNet={true}
     />
 
     <div id="main">

@@ -61,14 +61,7 @@ const Projects = ({ data, location }) => {
         description={
           'The Luminosity Lab produces innovations which aim to incite positive change in the world.'
         }
-        gl="mark"
-        videoStyle={{
-          '-webkit-filter': videoBlur,
-          '-moz-filter': videoBlur,
-          '-o-filter': videoBlur,
-          '-ms-filter': videoBlur,
-          filter: videoBlur
-        }}
+        vantaNet={true}
       />
 
       <div id="main">
