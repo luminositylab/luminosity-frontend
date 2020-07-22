@@ -20,23 +20,23 @@ const leadership = [
     description:
       'Tyler Smith is a graduate of the ASU Fulton Schools of Engineering with a Bachelors and Masters degrees in Mechanical Engineering and certificate in Knowledge Entrepreneurship and Innovation from the WP Carey School of Business. Upon graduation, Tyler was a recipient of the Moeur Award for completing his degrees with a GPA of 4.0 or higher.  During his masters degree he focused on numerical simulation and high performance computing and wrote his own multiphase fluid dynamics solver and parallel numerical algorithms that could solve on large compute clusters. After graduation he applied his degree at an engineering consulting company and worked on wide variety of applications such as energy systems, aerospace and defense, medical devices, and consumer products. Tyler led a team of cross disciplinary engineers working on numerous projects and successfully managed the team and customer relations to grow the program into one of the company’s largest ongoing contracts. Currently, Tyler serves as the Associate Director of Strategic Projects at Arizona State University and leads teams of electrical, mechanical, and design students working on innovative projects in the Luminosity Lab.'
   },
-  {
-    name: 'Meghan Gibson',
-    title: 'Program Coordinator',
-    description:
-      'Meghan is a North Carolina native and graduate of the University of North Carolina at Charlotte where she obtained a Bachelor of Arts studying both History and Communication Studies with a concentration in Organizational Communication. Her career has been predominately in Higher Education, previously working at a men’s national Fraternity serving as the Director of Leadership Development. Throughout her time with the organization, Meghan created and oversaw small- and large-scale event budgets, planned and executed educational programming around risk management and alcohol education, officer training, and leadership development for the 180+ undergraduate chapters nationwide, collaborated with various hotels and vendors to host programs, communicated and provided logistical support for over 175 volunteers, and negotiated contracts. As a Program Coordinator for ASU’s Luminosity Lab, her responsibilities include providing programming and support for the lab, in addition to planning and executing hackathons for corporate partners.'
-  },
+  // {
+  //   name: 'Meghan Gibson',
+  //   title: 'Program Coordinator',
+  //   description:
+  //     'Meghan is a North Carolina native and graduate of the University of North Carolina at Charlotte where she obtained a Bachelor of Arts studying both History and Communication Studies with a concentration in Organizational Communication. Her career has been predominately in Higher Education, previously working at a men’s national Fraternity serving as the Director of Leadership Development. Throughout her time with the organization, Meghan created and oversaw small- and large-scale event budgets, planned and executed educational programming around risk management and alcohol education, officer training, and leadership development for the 180+ undergraduate chapters nationwide, collaborated with various hotels and vendors to host programs, communicated and provided logistical support for over 175 volunteers, and negotiated contracts. As a Program Coordinator for ASU’s Luminosity Lab, her responsibilities include providing programming and support for the lab, in addition to planning and executing hackathons for corporate partners.'
+  // },
   {
     name: 'Robb Olivieri',
     title: 'Project Manager',
     description:
       'Robb Olivieri is a New Jersey native and a graduate of Iona College in New York, where he obtained a Bachelor’s Degree in Political Science. He has spent several years in both the Higher Education and Startup spaces. Most recently serving as Director of Operations for a Phoenix based health-tech startup. Currently, Robb is managing a portfolio of projects within the lab and building out International Development’s Student Development Corps program.'
+  },
+  {
+    name: 'Stacy Wagner',
+    title: 'Manager',
+    description: 'Stacy Wagner'
   }
-  // {
-  //   name: 'Stacy Wagner',
-  //   title: 'The Merciless Matriarch',
-  //   description: 'Stacy Wagner'
-  // }
 ];
 
 const members = [
