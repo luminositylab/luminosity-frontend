@@ -26,7 +26,7 @@ const About = ({ data }) => (
             The Luminosity Lab conducts sponsored research and development for companies and organizations throughout the world. We leverage teams of interdisciplinary students to rapidly design, develop, and deploy innovative solutions for our partners. This work often entails emergining technologies, software development, analytics, research, and rapid-prototyping. By leveraging top-student talent, we are able to achieve outstanding results for our partners at a cost-effective price point. To partner with our lab, please contact us at luminosity@asu.edu.  
           </p>
 
-          <h3>Our Existing & Historical Partnerships</h3>
+          <h3>Our Existing & Past Partnerships</h3>
           <ul>
             <li>Starbucks Corporation</li>
             <li>Workiva</li>
