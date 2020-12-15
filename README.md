@@ -18,6 +18,7 @@ The site uses videos from [Pexels](https://www.pexels.com) and images from [Unsp
 
 Feel free to use the code as you wish!
 
+
 ## Usage
 
 This project uses Yarn for dependency management. To install dependencies and start, run:

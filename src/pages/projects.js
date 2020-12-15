@@ -57,7 +57,7 @@ const Projects = ({ data, location }) => {
       />
 
       <Banner
-        title={'Projects'}
+        title={'Example Projects'}
         description={
           'The Luminosity Lab produces innovations which aim to incite positive change in the world.'
         }

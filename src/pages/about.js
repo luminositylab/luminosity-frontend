@@ -7,8 +7,8 @@ import Banner from '../components/Banner';
 const About = ({ data }) => (
   <Layout>
     <SEO
-      title="Hackathons"
-      description="Hackathons hosted by Luminosity Lab."
+      title="About Us"
+      description="About The Luminosity Lab."
       // location={location}
     />
 

@@ -95,13 +95,12 @@ class HomeIndex extends React.Component {
                   )}
               </div>
               <header className="major">
-                <h3>Hackathons</h3>
+                <h3>Partnerships</h3>
                 <p>
-                  Luminosity hosts hackathons for the community at Arizona State
-                  University and the general public to engage all walks of life.
+                  Luminosity conducts R&D in partnership with companies and organizations from around the world.
                 </p>
               </header>
-              <Link to="/hackathons" className="link primary" />
+              <Link to="/partnerships" className="link primary" />
             </article>
             {/* <article style={{ backgroundImage: `url(${pic02})` }}>
               <header className="major">
