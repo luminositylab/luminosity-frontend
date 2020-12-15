@@ -16,29 +16,39 @@ const Menu = props => (
             About
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link onClick={props.onToggleMenu} to="/academy/">
             Academy
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link onClick={props.onToggleMenu} to="/projects/">
             Projects
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link onClick={props.onToggleMenu} to="/hackathons/">
             Hackathons
           </Link>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <Link onClick={props.onToggleMenu} to="/process/">
             Our Process
+          </Link>
+        </li> */}
+        <li>
+          <Link onClick={props.onToggleMenu} to="/media/">
+            In the Media
+          </Link>
+        </li>
+        <li>
+          <Link onClick={props.onToggleMenu} to="/partnerships/">
+            Partnerships
           </Link>
         </li>
         <li>
           <Link onClick={props.onToggleMenu} to="/team/">
-            The Team
+            Our Team
           </Link>
         </li>
         {/* <li>

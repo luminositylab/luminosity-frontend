@@ -61,15 +61,15 @@ class Team extends React.Component {
     return (
       <Layout>
         <SEO
-          title="The Team"
-          description="The team which composes the Luminosity Lab."
+          title="Our Team"
+          description="Meet the Luminosity Lab."
           location={location}
         />
 
         <Banner
-          title={'The Team'}
+          title={'Our Team'}
           description={
-            'Luminosity is comprised of an interdisciplinary team of problem-solvers.'
+            'Luminosity is comprised of an interdisciplinary team of student problem-solvers.'
           }
           vantaNet={true}
         />
@@ -102,7 +102,7 @@ class Team extends React.Component {
               )}
             </div>
             <br></br>
-            <div className="subtitle"> - and many more - </div>
+            <div className="subtitle"> - and many others - </div>
             <br></br>
             <br></br>
             <br></br>
