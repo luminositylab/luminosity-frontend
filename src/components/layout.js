@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import 'typeface-roboto';
 import 'typeface-carrois-gothic-sc';
+import 'typeface-raleway';
 
 import '../assets/scss/main.scss';
 import Header from './Header';
