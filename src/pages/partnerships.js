@@ -43,6 +43,7 @@ const About = ({ data }) => (
             <li>Luke Air Force Base</li>
             <li>Lane College</li>
             <li>USAID</li>
+            <li>Mosaic Building Group, Inc.</li>
             <li>VacMobile</li>
             <li>Flinn Foundation</li>
             <li>The McCain Institute</li>
