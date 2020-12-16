@@ -1,6 +1,7 @@
 const translateMemberNameToPath = name =>
   name.replace(/\s+/g, '-').toLowerCase();
 
+
 const leadership = [
   {
     name: 'Mark Naufel',
@@ -42,191 +43,323 @@ const members = [
   // },
   {
     name: 'Alia Gilbert',
+    width: 4,
+    height: 4
   },
   {
     name: 'Alice Bao',
+    width: 3,
+    height: 4
   },
   {
     name: 'Ally Shott',
+    width: 4,
+    height: 4
   },
   {
     name: 'Andrei Marinescu',
+    width: 4,
+    height: 4
   },
   {
     name: 'Aritro Majumdar',
-    // title: 'The Data Scientist',
-    // description:
-    //   'Aritro Majumdar is a senior studying mathematics. He joined the lab at the beginning of the Fall 2018 semester. He is passionate about the data science, education, and entrepreneurship spaces and hopes to have a career in the cross-section. He took a year off from ASU and decided to pursue a certificate in data science at the coding school Galvanize and graduated early February 2018. Ever since then, he has been helping non-profits and companies build data-driven processes in their organizations and perform predictive analytics. Aritro also loves to connect with interesting people and collaborate on projects.  Outside of data science, Aritro helps run a co-working space in Tempe and plays percussion.'
+    width: 4,
+    height: 4
   },
   {
     name: 'Brian Wohlers',
+    width: 3,
+    height: 4
   },
   {
     name: 'Bryce Copenhaver',
+    width: 3,
+    height: 4
   },
   {
     name: 'Cameron Anundson',
+    width: 4,
+    height: 4
   },
   {
     name: 'Carson Gray',
+    width: 3,
+    height: 4
   },
   {
     name: 'Cat Lewis',
+    width: 3,
+    height: 4
   },
   {
     name: 'Clara Hall',
+    width: 4,
+    height: 4
   },
   {
     name: 'Clinton Ewell',
+    width: 3,
+    height: 5
   },
   {
     name: 'Collin Schairer',
+    width: 4,
+    height: 4
   },
   {
     name: 'Coltin Smith',
+    width: 3,
+    height: 4
   },
   {
     name: 'Connor Nail',
+    width: 4,
+    height: 4
   },
   {
     name: 'Dimetrius Hightower',
+    width: 4,
+    height: 5
   },
   {
     name: 'Dylan Kerr',
+    width: 4,
+    height: 4
   },
   {
     name: 'Ethan Clark',
+    width: 3,
+    height: 4
   },
   {
     name: 'Evan Weiss',
+    width: 4,
+    height: 4
   },
   {
     name: 'Gowan Rowland',
+    width: 3,
+    height: 4
   },
   {
     name: 'Haley Harelson',
+    width: 4,
+    height: 6
   },
   {
     name: 'Hari Meyyappan',
+    width: 4,
+    height: 4
   },
   {
     name: 'Harish Bhutra',
+    width: 3,
+    height: 4
   },
   {
     name: 'Harsha Vanama',
+    width: 4,
+    height: 4
   },
   {
     name: 'J.P. Wightman',
+    width: 4,
+    height: 4
   },
   {
     name: 'Jeremy Liu',
+    width: 4,
+    height: 4
   },
   {
     name: 'John Patterson',
+    width: 4,
+    height: 4
   },
   {
     name: 'Joshua Chang',
+    width: 4,
+    height: 4
   },
   {
     name: 'Julia Greteman',
+    width: 3,
+    height: 4
   },
   {
     name: 'Kamille Green',
+    width: 4,
+    height: 4
   },
   {
     name: 'Kusum Ijari',
+    width: 3,
+    height: 4
   },
   {
     name: 'Kylel Scott',
+    width: 3,
+    height: 4
   },
   {
     name: 'Lewis Ruskin',
+    width: 4,
+    height: 4
   },
   {
     name: 'Lien White',
+    width: 4,
+    height: 6
   },
   {
     name: 'Manaswini Ayalasomayajula',
+    width: 4,
+    height: 4
   },
   {
     name: 'Maria Ananickal',
+    width: 3,
+    height: 4
   },
   {
     name: 'Mary Saxon',
+    width: 3,
+    height: 4
   },
-  {
-    name: 'Michelle Stinton',
-  },
+  // {
+  //   name: 'Michelle Stinton',
+  //   width: 4,
+  //   height: 4
+  // },
   {
     name: 'Micki Calo',
+    width: 4,
+    height: 4
   },
   {
     name: 'Nathaniel Ross',
+    width: 4,
+    height: 4
   },
   {
     name: 'Nik Dave',
+    width: 3,
+    height: 5
   },
   {
     name: 'Nikki Tran',
+    width: 3,
+    height: 5
   },
   {
     name: 'Rakshith Subramanyam',
+    width: 4,
+    height: 4
   },
   {
     name: 'Shakki Bhat',
+    width: 4,
+    height: 6
   },
   {
     name: 'Shannon McBreen',
+    width: 3,
+    height: 5
   },
   {
     name: 'Shawn Mian',
+    width: 3,
+    height: 4
   },
   {
     name: 'Shilpa Bhat',
+    width: 5,
+    height: 4
   },
   {
     name: 'Shivam Sadachar',
+    width: 4,
+    height: 4
   },
   {
     name: 'Shraddha Bhalerao',
+    width: 4,
+    height: 4
   },
   {
     name: 'Skanda Suresh',
+    width: 4,
+    height: 4
   },
   {
     name: 'Sree Gowtham Josyula',
+    width: 3,
+    height: 4
   },
   {
     name: 'Sudarsan Manikandan',
+    width: 3,
+    height: 4
   },
   {
     name: 'Sydney Wallace',
+    width: 4,
+    height: 4
   },
   {
     name: 'Tina Peng',
+    width: 3,
+    height: 5
   },
   {
     name: 'Trevor Lucero',
+    width: 5,
+    height: 4
   },
   {
     name: 'Victor Oleynik',
+    width: 3,
+    height: 4
   },
   {
     name: 'Vincent Caldwell',
+    width: 3,
+    height: 4
   },
   {
     name: 'Vivek Maskara',
+    width: 4,
+    height: 4
   },
   {
     name: 'Wayne Unger',
+    width: 3,
+    height: 4
   },
 
 ];
 
+// const members = [
+//   {
+//     src: require ('../assets/images/members/wayne-unger.jpg'),
+//     width: 3,
+//     height: 4
+//   },
+//   {
+//     src: require ('../assets/images/members/tina-peng.jpg'),
+//     width: 3,
+//     height: 4
+//   }
+// ];
+
 const membersWithPaths = members.map(member => ({
   ...member,
-  path: translateMemberNameToPath(member.name)
-}));
+  width: member.width,
+  height: member.height,
+  src: require('../assets/images/members/' + translateMemberNameToPath(member.name) + '.jpg'),
+}
+));
+
 
 const leadershipWithPaths = leadership.map(member => ({
   ...member,
