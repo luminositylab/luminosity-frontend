@@ -1,17 +1,30 @@
-import React from 'react';
-import { Link, graphql } from 'gatsby';
+import React, { useCallback } from "react";
+import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import BioModal from '../components/BioModal';
 import SEO from '../components/SEO';
 import Layout from '../components/layout';
 import Banner from '../components/Banner';
 import { leadership, members } from '../content/members';
+import Gallery from 'react-photo-gallery';
+import Carousel, { Modal, ModalGateway } from "react-images";
+
 
 class Team extends React.Component {
+  
   state = {
     isBioOpen: false,
-    member: {}
+    member: {},
+    currentImage: 0,
+    // setCurrentImage: 0,
+    viewerIsOpen: false,
+    // setViewerIsOpen: false,
   };
+  
+
+  componentDidMount(){
+    console.log(members)
+}
 
   createHeadshot = member => (
     <div
@@ -47,7 +60,33 @@ class Team extends React.Component {
     this.setState({ isBioOpen: false });
   };
 
+
+   openLightbox = (photo, index ) => {
+    this.setState({ currentImage: index.index });
+    this.setState({ viewerIsOpen: true });
+    console.log('STATE', this.state)
+  };
+
+   closeLightbox = () => {
+    this.setState({ currentImage: 1 });
+    this.setState({ viewerIsOpen: false });
+  };
+
+  
   render() {
+   
+    // const [currentImage, setCurrentImage] = useState(0);
+    // const [viewerIsOpen, setViewerIsOpen] = useState(false);
+  
+  
+    const customStyles = {
+      container: () => ({
+        // none of react-images styles are passed to <View />
+        // height: 400,
+        width: 600,
+      })
+    }
+
     const { data, location } = this.props;
 
     const mappedPathsToImages = data.headshotImages.edges.reduce(
@@ -93,16 +132,38 @@ class Team extends React.Component {
           <br></br>
             <div className="title">Students</div>
             <br></br>
-            <div className="members">
+            {/* <div className="members">
               {members.map(e =>
                 this.createHeadshot({
                   ...e,
                   image: mappedPathsToImages[e.path]
                 })
               )}
-            </div>
+            </div> */}
             <br></br>
-            <div className="subtitle"> - and many others - </div>
+      
+
+                <Gallery photos={members} onClick={this.openLightbox} />
+      <ModalGateway>
+        {this.state.viewerIsOpen ? (
+          <Modal onClose={this.closeLightbox}>
+            <Carousel
+             frameProps={{ autoSize: 'true' }}
+             styles={customStyles}
+              currentIndex={this.state.currentImage}
+              views={members.map(x => ({
+                ...x,
+                srcset: x.srcSet,
+                caption: x.name,
+              }))}
+
+            />
+          </Modal>
+        ) : null}
+      </ModalGateway>
+      <br></br>
+            <br></br>
+      <div className="subtitle"> - and many others - </div>
             <br></br>
             <br></br>
             <br></br>
