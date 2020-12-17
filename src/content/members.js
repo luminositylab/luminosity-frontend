@@ -78,8 +78,8 @@ const members = [
   },
   {
     name: 'Cameron Anundson',
-    width: 4,
-    height: 4
+    width: 5,
+    height: 5 
   },
   {
     name: 'Carson Gray',
@@ -118,8 +118,8 @@ const members = [
   },
   {
     name: 'Dimetrius Hightower',
-    width: 4,
-    height: 5
+    width: 5,
+    height: 6
   },
   {
     name: 'Dylan Kerr',
@@ -192,6 +192,11 @@ const members = [
     height: 4
   },
   {
+    name: 'Katie Pascavis',
+    width: 4,
+    height: 4
+  },
+  {
     name: 'Kusum Ijari',
     width: 3,
     height: 4
@@ -218,13 +223,13 @@ const members = [
   },
   {
     name: 'Maria Ananickal',
-    width: 3,
-    height: 4
+    width: 5,
+    height: 6
   },
   {
     name: 'Mary Saxon',
-    width: 3,
-    height: 4
+    width: 4,
+    height: 6
   },
   // {
   //   name: 'Michelle Stinton',
@@ -243,13 +248,13 @@ const members = [
   },
   {
     name: 'Nik Dave',
-    width: 3,
-    height: 5
+    width: 4,
+    height: 6
   },
   {
     name: 'Nikki Tran',
-    width: 3,
-    height: 5
+    width: 4,
+    height: 6
   },
   {
     name: 'Rakshith Subramanyam',
@@ -268,8 +273,8 @@ const members = [
   },
   {
     name: 'Shawn Mian',
-    width: 3,
-    height: 4
+    width: 4,
+    height: 6
   },
   {
     name: 'Shilpa Bhat',
@@ -313,8 +318,13 @@ const members = [
   },
   {
     name: 'Trevor Lucero',
-    width: 5,
-    height: 4
+    width: 1.2,
+    height: 1
+  },
+  {
+    name: 'Uriel Ornelas',
+    width: 4,
+    height: 6
   },
   {
     name: 'Victor Oleynik',
