@@ -18,6 +18,7 @@ import airforce from '../assets/images/news/airforce.png';
 import dash from '../assets/images/news/dash.jpg';
 import pch from '../assets/images/news/pch.jpg';
 import shipshape from '../assets/images/news/shipshape.jpg';
+import computer from '../assets/images/news/computer.jpg';
 
 
 const videoBlur = `blur(10px)`;
@@ -50,6 +51,27 @@ const Process = () => (
             <ul className="actions">
               <li>
                 <a target="_blank" href="https://asunow.asu.edu/20201130-solutions-asu-students%E2%80%99-lunar-exploration-system-finalist-nasa-competition" className="button">
+                  Learn more
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </section>
+
+        <section key={'think-tank-drives-practical-innovation-and-collaboration'}>
+        <a href={`https://www.techlearning.com/news/think-tank-drives-practical-innovation-and-collaboration`} target="_blank" className="image">
+          <img className="newsImg" src={computer} alt={'computer'} />
+        </a>
+        <div className="content">
+          <div className="inner">
+            <header className="major">
+              <h3>{'Think Tank Drives Practical Innovation and Collaboration'}</h3>
+            </header>
+            <p>{'ASU’s Luminosity Lab, a think tank, is expanding its efforts to create and implement real-world solutions for local health care, education, and energy challenges.'}</p>
+            <ul className="actions">
+              <li>
+                <a target="_blank" href="https://www.techlearning.com/news/think-tank-drives-practical-innovation-and-collaboration" className="button">
                   Learn more
                 </a>
               </li>
